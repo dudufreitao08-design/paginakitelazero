@@ -35,7 +35,7 @@ export function Hero() {
         </div>
 
         <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl font-medium leading-relaxed">
-          O Kit Tela Zero resolve o maior problema depois de tirar o celular: o que oferecer no lugar. +250 atividades prontas para usar ainda hoje, em casa, no carro e na rua.
+          Imprima e comece ainda hoje. Seu filho vai ter tanto para fazer que nem vai lembrar que existe tela.
         </p>
 
         <div className="flex flex-col items-center space-y-4 w-full">
