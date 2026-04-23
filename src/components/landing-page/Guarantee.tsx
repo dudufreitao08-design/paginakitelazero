@@ -4,9 +4,9 @@ import { ShieldCheck } from 'lucide-react';
 export function Guarantee() {
   return (
     <section className="py-16 px-6">
-      <div className="max-w-4xl mx-auto bg-green-50 border-2 border-green-100 p-10 rounded-[2.5rem] flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-10">
+      <div className="max-w-4xl mx-auto bg-blue-50 border-2 border-blue-100 p-10 rounded-[2.5rem] flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-10">
         <div className="flex-shrink-0 bg-white p-6 rounded-3xl shadow-sm">
-          <ShieldCheck className="h-16 w-16 text-green-500" />
+          <ShieldCheck className="h-16 w-16 text-blue-500" />
         </div>
         <div className="text-center md:text-left">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-secondary mb-4">Garantia Incondicional de 7 Dias</h2>
