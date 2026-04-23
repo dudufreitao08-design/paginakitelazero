@@ -13,7 +13,7 @@ export function Pricing() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Kit Básico */}
           <div className="bg-white p-8 rounded-3xl border border-gray-200 opacity-80 scale-95 md:order-1">
-            <h3 className="text-xl font-bold text-secondary mb-2 text-center">Kit Básico</h3>
+            <h3 className="text-2xl font-bold text-secondary mb-2 text-center">Kit Básico</h3>
             <div className="flex flex-col items-center mb-6">
               <span className="text-xs font-bold text-muted-foreground mb-1 line-through opacity-70">De R$ 29,90</span>
               <div className="flex items-baseline justify-center">
@@ -23,20 +23,20 @@ export function Pricing() {
             </div>
             
             <ul className="space-y-4 mb-8">
-              <li className="flex items-center text-sm">
-                <Check className="mr-3 h-5 w-5 text-blue-500 flex-shrink-0" />
+              <li className="flex items-center text-base font-medium text-secondary">
+                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
                 <span>+250 Dinâmicas Interativas</span>
               </li>
-              <li className="flex items-center text-sm">
-                <Check className="mr-3 h-5 w-5 text-blue-500 flex-shrink-0" />
+              <li className="flex items-center text-base font-medium text-secondary">
+                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
                 <span>Atividades Para Casa, Carro e Rua</span>
               </li>
-              <li className="flex items-center text-sm">
-                <Check className="mr-3 h-5 w-5 text-blue-500 flex-shrink-0" />
+              <li className="flex items-center text-base font-medium text-secondary">
+                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
                 <span>Acesso Imediato</span>
               </li>
-              <li className="flex items-center text-sm">
-                <Check className="mr-3 h-5 w-5 text-blue-500 flex-shrink-0" />
+              <li className="flex items-center text-base font-medium text-secondary">
+                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
                 <span>Garantia de 7 Dias</span>
               </li>
             </ul>
