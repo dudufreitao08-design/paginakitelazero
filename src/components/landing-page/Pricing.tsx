@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Check, ShieldCheck } from 'lucide-react';
+import { Check, X, ShieldCheck } from 'lucide-react';
 
 export function Pricing() {
   return (
@@ -53,7 +53,9 @@ export function Pricing() {
             
             <h3 className="text-2xl font-bold text-secondary mb-2 text-center">Kit Completo</h3>
             <div className="flex flex-col items-center mb-6">
-              <span className="text-sm font-bold text-primary mb-1 line-through opacity-70">De R$ 67 por APENAS:</span>
+              <span className="text-sm font-bold text-primary mb-1">
+                <span className="line-through opacity-70">De R$ 67</span> por APENAS:
+              </span>
               <div className="flex items-baseline">
                 <span className="text-2xl font-bold text-secondary">R$</span>
                 <span className="text-6xl font-black text-secondary">19,90</span>
