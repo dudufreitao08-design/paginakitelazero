@@ -42,23 +42,6 @@ export function Hero() {
             Acesso imediato · Garantia de 7 dias
           </p>
         </div>
-
-        <div className="flex flex-col items-center gap-4 pt-8 border-t border-gray-100 w-full">
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-12">
-            <div className="flex items-center text-sm font-bold text-secondary">
-              <CheckCircle2 className="mr-2 h-5 w-5 text-primary" />
-              Material entregue na hora
-            </div>
-            <div className="flex items-center text-sm font-bold text-secondary">
-              <CheckCircle2 className="mr-2 h-5 w-5 text-primary" />
-              Sem assinatura
-            </div>
-          </div>
-          <div className="flex items-center text-sm font-bold text-secondary">
-            <CheckCircle2 className="mr-2 h-5 w-5 text-primary" />
-            +4.200 mães satisfeitas
-          </div>
-        </div>
       </div>
     </section>
   );
