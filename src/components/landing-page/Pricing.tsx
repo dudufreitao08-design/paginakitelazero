@@ -13,8 +13,8 @@ export function Pricing() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Kit Básico */}
           <div className="bg-white p-8 rounded-3xl border border-gray-200 opacity-80 scale-95 md:order-1">
-            <h3 className="text-xl font-bold text-secondary mb-2">Kit Básico</h3>
-            <div className="flex items-baseline mb-6">
+            <h3 className="text-xl font-bold text-secondary mb-2 text-center">Kit Básico</h3>
+            <div className="flex items-baseline justify-center mb-6">
               <span className="text-2xl font-bold text-secondary">R$</span>
               <span className="text-5xl font-extrabold text-secondary">10</span>
             </div>
@@ -49,8 +49,8 @@ export function Pricing() {
               MAIS VENDIDO
             </div>
             
-            <h3 className="text-2xl font-bold text-secondary mb-2">Kit Completo</h3>
-            <div className="flex flex-col mb-6">
+            <h3 className="text-2xl font-bold text-secondary mb-2 text-center">Kit Completo</h3>
+            <div className="flex flex-col items-center mb-6">
               <span className="text-xs font-bold text-primary mb-1 line-through opacity-70">De R$ 197 por apenas:</span>
               <div className="flex items-baseline">
                 <span className="text-2xl font-bold text-secondary">R$</span>
