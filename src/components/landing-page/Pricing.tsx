@@ -11,9 +11,9 @@ export function Pricing() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Basic Plan */}
-          <div className="bg-white p-8 rounded-3xl border border-gray-200 opacity-80 scale-95">
-            <h3 className="text-xl font-bold text-secondary mb-2">Plano Básico</h3>
+          {/* Kit Básico */}
+          <div className="bg-white p-8 rounded-3xl border border-gray-200 opacity-80 scale-95 md:order-1">
+            <h3 className="text-xl font-bold text-secondary mb-2">Kit Básico</h3>
             <div className="flex items-baseline mb-6">
               <span className="text-2xl font-bold text-secondary">R$</span>
               <span className="text-5xl font-extrabold text-secondary">10</span>
@@ -43,13 +43,13 @@ export function Pricing() {
             </Button>
           </div>
 
-          {/* Premium Plan */}
-          <div className="relative bg-white p-10 rounded-[2.5rem] border-4 border-primary shadow-2xl z-10">
+          {/* Kit Premium */}
+          <div className="relative bg-white p-10 rounded-[2.5rem] border-4 border-primary shadow-2xl z-10 md:order-2">
             <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-white px-6 py-2 rounded-full text-sm font-black uppercase tracking-widest shadow-lg whitespace-nowrap">
               MAIS ESCOLHIDO
             </div>
             
-            <h3 className="text-2xl font-bold text-secondary mb-2">Plano Premium</h3>
+            <h3 className="text-2xl font-bold text-secondary mb-2">Kit Premium</h3>
             <div className="flex flex-col mb-6">
               <span className="text-xs font-bold text-primary mb-1 line-through opacity-70">De R$ 197 por apenas:</span>
               <div className="flex items-baseline">
