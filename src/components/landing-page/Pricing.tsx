@@ -12,8 +12,8 @@ export function Pricing() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Kit Básico */}
-          <div className="bg-white p-8 rounded-3xl border border-gray-200 opacity-80 scale-95 md:order-1">
-            <h3 className="text-2xl font-bold text-secondary mb-4 text-center">Kit Básico</h3>
+          <div className="bg-white p-6 sm:p-8 rounded-3xl border border-gray-200 opacity-80 scale-95 md:order-1">
+            <h3 className="text-2xl sm:text-3xl font-bold text-secondary mb-4 text-center">Kit Básico</h3>
             <div className="flex flex-col items-center mb-6">
               <div className="flex items-baseline justify-center">
                 <span className="text-2xl font-bold text-secondary">R$</span>
@@ -23,19 +23,19 @@ export function Pricing() {
             
             <ul className="space-y-4 mb-8">
               <li className="flex items-center text-lg font-medium text-secondary">
-                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
+                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
                 <span className="whitespace-nowrap">+250 Dinâmicas Interativas</span>
               </li>
               <li className="flex items-center text-lg font-medium text-secondary">
-                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
+                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
                 <span className="whitespace-nowrap">Atividades Para Casa, Carro e Rua</span>
               </li>
               <li className="flex items-center text-lg font-medium text-secondary">
-                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
+                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
                 <span className="whitespace-nowrap">Acesso Imediato</span>
               </li>
               <li className="flex items-center text-lg font-medium text-secondary">
-                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
+                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
                 <span className="whitespace-nowrap">Garantia de 7 Dias</span>
               </li>
             </ul>
@@ -46,41 +46,43 @@ export function Pricing() {
           </div>
 
           {/* Kit Completo */}
-          <div className="relative bg-white p-10 rounded-[2.5rem] border-4 border-primary shadow-2xl z-10 md:order-2">
+          <div className="relative bg-white p-6 sm:p-10 rounded-[2.5rem] border-4 border-primary shadow-2xl z-10 md:order-2">
             <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-white px-6 py-2 rounded-full text-sm font-black uppercase tracking-widest shadow-lg whitespace-nowrap">
               🌟MAIS VENDIDO
             </div>
             
-            <h3 className="text-2xl font-bold text-secondary mb-2 text-center">Kit Completo</h3>
-            <div className="flex flex-col items-center mb-6">
-              <span className="text-sm font-bold text-primary mb-1">
-                <span className="line-through opacity-70">De R$ 67</span> por APENAS:
-              </span>
-              <div className="flex items-baseline">
-                <span className="text-2xl font-bold text-secondary">R$</span>
-                <span className="text-6xl font-black text-secondary">19,90</span>
+            <div className="text-center mb-6">
+              <h3 className="text-2xl sm:text-3xl font-bold text-secondary mb-2">Kit Completo</h3>
+              <div className="flex flex-col items-center">
+                <span className="text-lg font-bold text-primary mb-1">
+                  <span className="line-through opacity-70">De R$ 67</span> por APENAS:
+                </span>
+                <div className="flex items-baseline">
+                  <span className="text-2xl font-bold text-secondary">R$</span>
+                  <span className="text-6xl font-black text-secondary">19,90</span>
+                </div>
               </div>
             </div>
             
             <ul className="space-y-4 mb-10">
               <li className="flex items-center font-semibold text-secondary text-lg">
-                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
+                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
                 <span className="whitespace-nowrap">+250 Dinâmicas Interativas (PDF)</span>
               </li>
               <li className="flex items-center font-semibold text-secondary text-lg">
-                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
+                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
                 <span className="whitespace-nowrap">Categorias Casa, Carro e Rua</span>
               </li>
               <li className="flex items-center font-semibold text-secondary text-lg">
-                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
+                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
                 <span className="text-primary whitespace-nowrap">Todos os 5 Bônus Inclusos</span>
               </li>
               <li className="flex items-center font-semibold text-secondary text-lg">
-                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
+                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
                 <span className="whitespace-nowrap">Acesso Vitalício e Atualizações</span>
               </li>
               <li className="flex items-center font-semibold text-secondary text-lg">
-                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
+                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
                 <span className="whitespace-nowrap">Suporte via WhatsApp</span>
               </li>
             </ul>
