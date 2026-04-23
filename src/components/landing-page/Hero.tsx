@@ -15,13 +15,13 @@ export function Hero() {
         </h1>
         
         <div className="w-full max-w-4xl py-4 sm:py-8">
-          <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] flex items-center justify-center bg-white rounded-[2rem] sm:rounded-[3rem] overflow-hidden shadow-2xl border border-gray-100/50">
+          <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] flex items-center justify-center overflow-hidden">
             {heroImage ? (
               <Image 
                 src={heroImage.imageUrl}
                 alt={heroImage.description}
                 fill
-                className="object-contain p-4 sm:p-8 hover:scale-105 transition-transform duration-500"
+                className="object-contain hover:scale-105 transition-transform duration-500"
                 priority
                 data-ai-hint={heroImage.imageHint}
               />
