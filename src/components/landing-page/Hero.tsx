@@ -11,10 +11,6 @@ export function Hero() {
           +250 Dinâmicas Interativas Para <span className="text-primary">Tirar Seu Filho da Tela</span>
         </h1>
         
-        <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl font-medium leading-relaxed">
-          +250 atividades prontas para usar ainda hoje — em casa, no carro e na rua. Sem planejar. Sem comprar nada.
-        </p>
-
         <div className="w-full max-w-xl py-8">
           <CssMockup />
         </div>
