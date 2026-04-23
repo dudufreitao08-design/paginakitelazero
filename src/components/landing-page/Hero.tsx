@@ -7,10 +7,6 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden pt-12 pb-16 px-6 max-w-7xl mx-auto">
       <div className="flex flex-col items-center text-center space-y-6">
-        <span className="bg-accent text-accent-foreground px-4 py-1 rounded-full text-xs sm:text-sm font-bold border border-primary/20 animate-in fade-in slide-in-from-bottom-2 duration-500">
-          Para mães que querem a atenção do filho de volta
-        </span>
-        
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-secondary leading-tight max-w-4xl tracking-tight">
           +250 Dinâmicas Interativas Para Tirar Seu Filho da Tela
         </h1>
