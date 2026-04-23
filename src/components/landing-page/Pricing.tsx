@@ -46,7 +46,7 @@ export function Pricing() {
           {/* Kit Premium */}
           <div className="relative bg-white p-10 rounded-[2.5rem] border-4 border-primary shadow-2xl z-10 md:order-2">
             <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-white px-6 py-2 rounded-full text-sm font-black uppercase tracking-widest shadow-lg whitespace-nowrap">
-              MAIS ESCOLHIDO
+              MAIS VENDIDO
             </div>
             
             <h3 className="text-2xl font-bold text-secondary mb-2">Kit Premium</h3>
