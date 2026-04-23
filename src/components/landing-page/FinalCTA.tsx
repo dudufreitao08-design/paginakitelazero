@@ -13,7 +13,7 @@ export function FinalCTA() {
           Chega de birras e de ver seu filho hipnotizado por uma tela. Recupere o controle e a diversão da sua família agora.
         </h3>
         <div className="pt-8">
-          <Button asChild size="lg" className="w-full sm:w-auto h-20 text-2xl font-black bg-primary hover:bg-primary/90 rounded-2xl px-16 shadow-[0_8px_0_0_#5b21b6] active:translate-y-1 active:shadow-none transition-all">
+          <Button asChild size="lg" className="w-full sm:w-auto h-20 text-2xl font-black bg-primary hover:bg-primary/90 rounded-2xl px-16 shadow-[0_8px_0_0_#1d4ed8] active:translate-y-1 active:shadow-none transition-all">
             <a href="#precos">
               QUERO MEU KIT AGORA <ArrowRight className="ml-2 h-7 w-7" />
             </a>
