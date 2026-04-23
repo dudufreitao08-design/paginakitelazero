@@ -14,9 +14,12 @@ export function Pricing() {
           {/* Kit Básico */}
           <div className="bg-white p-8 rounded-3xl border border-gray-200 opacity-80 scale-95 md:order-1">
             <h3 className="text-xl font-bold text-secondary mb-2 text-center">Kit Básico</h3>
-            <div className="flex items-baseline justify-center mb-6">
-              <span className="text-2xl font-bold text-secondary">R$</span>
-              <span className="text-5xl font-extrabold text-secondary">10</span>
+            <div className="flex flex-col items-center mb-6">
+              <span className="text-xs font-bold text-muted-foreground mb-1 line-through opacity-70">De R$ 29,90</span>
+              <div className="flex items-baseline justify-center">
+                <span className="text-2xl font-bold text-secondary">R$</span>
+                <span className="text-5xl font-extrabold text-secondary">10</span>
+              </div>
             </div>
             
             <ul className="space-y-4 mb-8">
