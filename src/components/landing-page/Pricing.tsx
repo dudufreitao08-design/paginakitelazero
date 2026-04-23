@@ -22,19 +22,19 @@ export function Pricing() {
             <ul className="space-y-4 mb-8">
               <li className="flex items-center text-sm">
                 <Check className="mr-3 h-5 w-5 text-blue-500 flex-shrink-0" />
-                <span>+250 Dinâmicas Interativas (PDF)</span>
+                <span>+250 Dinâmicas Interativas</span>
               </li>
               <li className="flex items-center text-sm">
                 <Check className="mr-3 h-5 w-5 text-blue-500 flex-shrink-0" />
-                <span>Categorias Casa, Carro e Rua</span>
+                <span>Atividades Para Casa, Carro e Rua</span>
               </li>
-              <li className="flex items-center text-sm text-gray-400 line-through">
-                <X className="mr-3 h-5 w-5 text-gray-300 flex-shrink-0" />
-                <span>Todos os 5 Bônus Exclusivos</span>
+              <li className="flex items-center text-sm">
+                <Check className="mr-3 h-5 w-5 text-blue-500 flex-shrink-0" />
+                <span>Acesso Imediato</span>
               </li>
-              <li className="flex items-center text-sm text-gray-400 line-through">
-                <X className="mr-3 h-5 w-5 text-gray-300 flex-shrink-0" />
-                <span>Acesso Vitalício</span>
+              <li className="flex items-center text-sm">
+                <Check className="mr-3 h-5 w-5 text-blue-500 flex-shrink-0" />
+                <span>Garantia de 7 Dias</span>
               </li>
             </ul>
             
