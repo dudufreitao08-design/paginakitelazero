@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
@@ -15,9 +14,8 @@ export function Hero() {
           +250 Dinâmicas Interativas Para <span className="text-primary">Tirar Seu Filho da Tela</span>
         </h1>
         
-        {/* Espaço reservado para o Mockup do Produto */}
         <div className="w-full max-w-4xl py-4 sm:py-8">
-          <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] flex items-center justify-center bg-gray-50 rounded-[2rem] sm:rounded-[3rem] overflow-hidden shadow-2xl border border-gray-100/50">
+          <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] flex items-center justify-center bg-white rounded-[2rem] sm:rounded-[3rem] overflow-hidden shadow-2xl border border-gray-100/50">
             {heroImage ? (
               <Image 
                 src={heroImage.imageUrl}
@@ -30,7 +28,7 @@ export function Hero() {
             ) : (
               <div className="flex flex-col items-center space-y-4 text-muted-foreground">
                 <div className="w-16 h-16 bg-gray-200 rounded-2xl animate-pulse" />
-                <span className="font-medium">Espaço para Mockup do Produto</span>
+                <span className="font-medium">Carregando Mockup...</span>
               </div>
             )}
           </div>
