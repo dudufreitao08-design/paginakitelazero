@@ -20,7 +20,7 @@ export function Hero() {
         </div>
 
         <div className="flex flex-col items-center space-y-4 w-full">
-          <Button asChild size="lg" className="w-full sm:w-auto h-16 sm:h-20 text-xl sm:text-2xl font-bold bg-primary hover:bg-primary/90 rounded-2xl px-12 shadow-[0_8px_0_0_#27ae60] active:translate-y-1 active:shadow-none transition-all">
+          <Button asChild size="lg" className="w-full sm:w-auto h-16 sm:h-20 text-xl sm:text-2xl font-bold bg-primary hover:bg-primary/90 rounded-2xl px-12 shadow-[0_8px_0_0_#15803d] active:translate-y-1 active:shadow-none transition-all">
             <a href="#precos">
               Quero o Kit Agora <ArrowRight className="ml-2 h-6 w-6" />
             </a>
