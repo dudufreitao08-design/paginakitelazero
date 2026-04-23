@@ -8,7 +8,7 @@ export function Hero() {
     <section className="relative overflow-hidden pt-12 pb-16 px-6 max-w-7xl mx-auto">
       <div className="flex flex-col items-center text-center space-y-6">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-secondary leading-tight max-w-4xl tracking-tight">
-          +250 Dinâmicas Interativas Para Tirar Seu Filho da Tela
+          +250 Dinâmicas Interativas Para <span className="text-primary">Tirar Seu Filho da Tela</span>
         </h1>
         
         <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl font-medium leading-relaxed">
