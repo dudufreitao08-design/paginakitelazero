@@ -23,11 +23,11 @@ export function Pricing() {
             
             <ul className="space-y-4 mb-8">
               <li className="flex items-center text-sm">
-                <Check className="mr-3 h-5 w-5 text-blue-500 flex-shrink-0" />
+                <Check className="mr-3 h-5 w-5 text-violet-500 flex-shrink-0" />
                 <span>+250 Dinâmicas Interativas (PDF)</span>
               </li>
               <li className="flex items-center text-sm">
-                <Check className="mr-3 h-5 w-5 text-blue-500 flex-shrink-0" />
+                <Check className="mr-3 h-5 w-5 text-violet-500 flex-shrink-0" />
                 <span>Categorias Casa, Carro e Rua</span>
               </li>
               <li className="flex items-center text-sm text-gray-400 line-through">
@@ -63,28 +63,28 @@ export function Pricing() {
             
             <ul className="space-y-4 mb-10">
               <li className="flex items-center font-semibold text-secondary">
-                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
+                <Check className="mr-3 h-6 w-6 text-violet-500 flex-shrink-0" />
                 <span>+250 Dinâmicas Interativas (PDF)</span>
               </li>
               <li className="flex items-center font-semibold text-secondary">
-                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
+                <Check className="mr-3 h-6 w-6 text-violet-500 flex-shrink-0" />
                 <span>Categorias Casa, Carro e Rua</span>
               </li>
               <li className="flex items-center font-semibold text-secondary">
-                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
+                <Check className="mr-3 h-6 w-6 text-violet-500 flex-shrink-0" />
                 <span className="text-primary">Todos os 5 Bônus Inclusos</span>
               </li>
               <li className="flex items-center font-semibold text-secondary">
-                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
+                <Check className="mr-3 h-6 w-6 text-violet-500 flex-shrink-0" />
                 <span>Acesso Vitalício e Atualizações</span>
               </li>
               <li className="flex items-center font-semibold text-secondary">
-                <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
+                <Check className="mr-3 h-6 w-6 text-violet-500 flex-shrink-0" />
                 <span>Suporte via WhatsApp</span>
               </li>
             </ul>
             
-            <Button asChild className="w-full h-20 text-xl font-black bg-primary hover:bg-primary/90 rounded-2xl shadow-[0_6px_0_0_#1d4ed8] active:translate-y-1 active:shadow-none transition-all">
+            <Button asChild className="w-full h-20 text-xl font-black bg-primary hover:bg-primary/90 rounded-2xl shadow-[0_6px_0_0_#5b21b6] active:translate-y-1 active:shadow-none transition-all">
               <a href="#">QUERO O PREMIUM AGORA</a>
             </Button>
             

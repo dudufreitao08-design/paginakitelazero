@@ -55,7 +55,7 @@ export function Bonuses() {
               <div className="flex-grow">
                 <h3 className="font-bold text-secondary text-lg">{bonus.name}</h3>
                 <p className="text-sm text-muted-foreground mb-1">{bonus.desc}</p>
-                <span className="text-xs font-bold text-blue-600 uppercase">Valor original: {bonus.value}</span>
+                <span className="text-xs font-bold text-violet-600 uppercase">Valor original: {bonus.value}</span>
               </div>
             </div>
           ))}
