@@ -29,15 +29,7 @@ export function Testimonials() {
   return (
     <section className="py-24 px-6 max-w-7xl mx-auto">
       <div className="text-center mb-16">
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary mb-4">O que outros pais estão dizendo</h2>
-        <div className="flex justify-center items-center space-x-2 text-primary">
-          <Star className="fill-current" />
-          <Star className="fill-current" />
-          <Star className="fill-current" />
-          <Star className="fill-current" />
-          <Star className="fill-current" />
-          <span className="text-secondary font-bold ml-2">4.9/5 estrelas</span>
-        </div>
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary">O que outros pais estão dizendo</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
