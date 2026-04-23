@@ -12,7 +12,7 @@ export function Hero() {
         </span>
         
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-secondary leading-tight max-w-4xl tracking-tight">
-          Seu filho larga a tela sozinho quando você tem isso na mão
+          +250 Dinâmicas Interativas Para Tirar Seu Filho da Tela
         </h1>
         
         <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl font-medium leading-relaxed">
