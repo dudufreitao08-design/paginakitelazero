@@ -17,7 +17,6 @@ export function Pricing() {
             <div className="flex items-baseline mb-6">
               <span className="text-2xl font-bold text-secondary">R$</span>
               <span className="text-5xl font-extrabold text-secondary">10</span>
-              <span className="text-muted-foreground ml-2">Pagamento único</span>
             </div>
             
             <ul className="space-y-4 mb-8">
@@ -56,7 +55,6 @@ export function Pricing() {
               <div className="flex items-baseline">
                 <span className="text-2xl font-bold text-secondary">R$</span>
                 <span className="text-6xl font-black text-secondary">19,90</span>
-                <span className="text-muted-foreground ml-2">Pagamento único</span>
               </div>
             </div>
             
