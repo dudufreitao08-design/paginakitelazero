@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Check, X, ShieldCheck } from 'lucide-react';
+import { Check, ShieldCheck } from 'lucide-react';
 
 export function Pricing() {
   return (
