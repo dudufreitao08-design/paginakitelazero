@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -14,24 +14,23 @@ export function Hero() {
           +250 Dinâmicas Interativas Para <span className="text-primary">Tirar Seu Filho da Tela</span>
         </h1>
         
-        <div className="w-full max-w-4xl py-4 sm:py-8">
-          <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] flex items-center justify-center overflow-hidden">
-            {heroImage ? (
-              <Image 
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
-                fill
-                className="object-contain hover:scale-105 transition-transform duration-500"
-                priority
-                data-ai-hint={heroImage.imageHint}
-              />
-            ) : (
-              <div className="flex flex-col items-center space-y-4 text-muted-foreground">
-                <div className="w-16 h-16 bg-gray-200 rounded-2xl animate-pulse" />
-                <span className="font-medium">Carregando Mockup...</span>
-              </div>
-            )}
-          </div>
+        <div className="w-full max-w-4xl py-4 sm:py-8 flex justify-center">
+          {heroImage ? (
+            <Image 
+              src={heroImage.imageUrl}
+              alt={heroImage.description}
+              width={600}
+              height={400}
+              className="object-contain hover:scale-105 transition-transform duration-500"
+              priority
+              data-ai-hint={heroImage.imageHint}
+            />
+          ) : (
+            <div className="flex flex-col items-center space-y-4 text-muted-foreground">
+              <div className="w-16 h-16 bg-gray-200 rounded-2xl animate-pulse" />
+              <span className="font-medium">Carregando Mockup...</span>
+            </div>
+          )}
         </div>
 
         <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl font-medium leading-relaxed">
@@ -41,7 +40,7 @@ export function Hero() {
         <div className="flex flex-col items-center space-y-4 w-full">
           <Button asChild size="lg" className="w-full sm:w-auto h-16 sm:h-20 text-xl sm:text-2xl font-black bg-primary hover:bg-primary/90 rounded-2xl px-12 shadow-[0_8px_0_0_#1d4ed8] active:translate-y-1 active:shadow-none transition-all">
             <a href="#precos">
-              QUERO O KIT AGORA <ArrowRight className="ml-2 h-7 w-7" />
+              QUERO O KIT AGORA
             </a>
           </Button>
           <p className="text-sm font-semibold text-muted-foreground">
