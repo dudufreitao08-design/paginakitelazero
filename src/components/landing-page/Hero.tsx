@@ -1,9 +1,12 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
-import { CssMockup } from './CssMockup';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Hero() {
+  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-product');
+
   return (
     <section className="relative overflow-hidden pt-12 pb-16 px-6 max-w-7xl mx-auto">
       <div className="flex flex-col items-center text-center space-y-6">
@@ -11,8 +14,18 @@ export function Hero() {
           +250 Dinâmicas Interativas Para <span className="text-primary">Tirar Seu Filho da Tela</span>
         </h1>
         
-        <div className="w-full max-w-xl py-8">
-          <CssMockup />
+        <div className="w-full max-w-2xl py-8">
+          {heroImage && (
+            <Image 
+              src={heroImage.imageUrl}
+              alt={heroImage.description}
+              width={800}
+              height={600}
+              className="w-full h-auto rounded-3xl shadow-2xl"
+              priority
+              data-ai-hint={heroImage.imageHint}
+            />
+          )}
         </div>
 
         <div className="flex flex-col items-center space-y-4 w-full">

@@ -1,0 +1,10 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-product",
+      "description": "Kit Tela Zero - Imagem do Produto",
+      "imageUrl": "https://i.imgur.com/2kVjXxE.png",
+      "imageHint": "product kit"
+    }
+  ]
+}
