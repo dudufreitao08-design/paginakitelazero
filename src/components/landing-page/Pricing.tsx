@@ -84,7 +84,7 @@ export function Pricing() {
               </li>
             </ul>
             
-            <Button asChild className="w-full h-20 text-xl font-black bg-primary hover:bg-primary/90 rounded-2xl shadow-[0_6px_0_0_#e65a2b] active:translate-y-1 active:shadow-none transition-all">
+            <Button asChild className="w-full h-20 text-xl font-black bg-primary hover:bg-primary/90 rounded-2xl shadow-[0_6px_0_0_#27ae60] active:translate-y-1 active:shadow-none transition-all">
               <a href="#">QUERO O PREMIUM AGORA</a>
             </Button>
             
