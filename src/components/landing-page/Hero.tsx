@@ -14,22 +14,17 @@ export function Hero() {
           +250 Dinâmicas Interativas Para <span className="text-primary">Tirar Seu Filho da Tela</span>
         </h1>
         
-        <div className="w-full max-w-4xl py-4 sm:py-8 flex justify-center">
-          {heroImage ? (
+        <div className="w-full max-w-3xl py-4 sm:py-8 flex justify-center">
+          {heroImage && (
             <Image 
               src={heroImage.imageUrl}
               alt={heroImage.description}
               width={600}
               height={400}
-              className="object-contain hover:scale-105 transition-transform duration-500"
+              className="object-contain"
               priority
               data-ai-hint={heroImage.imageHint}
             />
-          ) : (
-            <div className="flex flex-col items-center space-y-4 text-muted-foreground">
-              <div className="w-16 h-16 bg-gray-200 rounded-2xl animate-pulse" />
-              <span className="font-medium">Carregando Mockup...</span>
-            </div>
           )}
         </div>
 
@@ -48,14 +43,16 @@ export function Hero() {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-8 pt-8 border-t border-gray-100 w-full">
-          <div className="flex items-center text-sm font-bold text-secondary">
-            <CheckCircle2 className="mr-2 h-5 w-5 text-primary" />
-            Material entregue na hora
-          </div>
-          <div className="flex items-center text-sm font-bold text-secondary">
-            <CheckCircle2 className="mr-2 h-5 w-5 text-primary" />
-            Sem assinatura
+        <div className="flex flex-col items-center gap-4 pt-8 border-t border-gray-100 w-full">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-12">
+            <div className="flex items-center text-sm font-bold text-secondary">
+              <CheckCircle2 className="mr-2 h-5 w-5 text-primary" />
+              Material entregue na hora
+            </div>
+            <div className="flex items-center text-sm font-bold text-secondary">
+              <CheckCircle2 className="mr-2 h-5 w-5 text-primary" />
+              Sem assinatura
+            </div>
           </div>
           <div className="flex items-center text-sm font-bold text-secondary">
             <CheckCircle2 className="mr-2 h-5 w-5 text-primary" />
