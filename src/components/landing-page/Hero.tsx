@@ -51,7 +51,7 @@ export function Hero() {
         <div className="flex flex-wrap justify-center gap-4 sm:gap-8 pt-8 border-t border-gray-100 w-full">
           <div className="flex items-center text-sm font-bold text-secondary">
             <CheckCircle2 className="mr-2 h-5 w-5 text-primary" />
-            PDF entregue na hora
+            Material entregue na hora
           </div>
           <div className="flex items-center text-sm font-bold text-secondary">
             <CheckCircle2 className="mr-2 h-5 w-5 text-primary" />
