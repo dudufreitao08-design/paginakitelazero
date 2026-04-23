@@ -24,19 +24,19 @@ export function Pricing() {
             <ul className="space-y-4 mb-8">
               <li className="flex items-center text-lg font-medium text-secondary">
                 <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
-                <span>+250 Dinâmicas Interativas</span>
+                <span className="whitespace-nowrap">+250 Dinâmicas Interativas</span>
               </li>
               <li className="flex items-center text-lg font-medium text-secondary">
                 <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
-                <span>Atividades Para Casa, Carro e Rua</span>
+                <span className="whitespace-nowrap">Atividades Para Casa, Carro e Rua</span>
               </li>
               <li className="flex items-center text-lg font-medium text-secondary">
                 <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
-                <span>Acesso Imediato</span>
+                <span className="whitespace-nowrap">Acesso Imediato</span>
               </li>
               <li className="flex items-center text-lg font-medium text-secondary">
                 <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
-                <span>Garantia de 7 Dias</span>
+                <span className="whitespace-nowrap">Garantia de 7 Dias</span>
               </li>
             </ul>
             
@@ -65,23 +65,23 @@ export function Pricing() {
             <ul className="space-y-4 mb-10">
               <li className="flex items-center font-semibold text-secondary text-lg">
                 <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
-                <span>+250 Dinâmicas Interativas (PDF)</span>
+                <span className="whitespace-nowrap">+250 Dinâmicas Interativas (PDF)</span>
               </li>
               <li className="flex items-center font-semibold text-secondary text-lg">
                 <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
-                <span>Categorias Casa, Carro e Rua</span>
+                <span className="whitespace-nowrap">Categorias Casa, Carro e Rua</span>
               </li>
               <li className="flex items-center font-semibold text-secondary text-lg">
                 <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
-                <span className="text-primary">Todos os 5 Bônus Inclusos</span>
+                <span className="text-primary whitespace-nowrap">Todos os 5 Bônus Inclusos</span>
               </li>
               <li className="flex items-center font-semibold text-secondary text-lg">
                 <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
-                <span>Acesso Vitalício e Atualizações</span>
+                <span className="whitespace-nowrap">Acesso Vitalício e Atualizações</span>
               </li>
               <li className="flex items-center font-semibold text-secondary text-lg">
                 <Check className="mr-3 h-6 w-6 text-blue-500 flex-shrink-0" />
-                <span>Suporte via WhatsApp</span>
+                <span className="whitespace-nowrap">Suporte via WhatsApp</span>
               </li>
             </ul>
             
