@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -16,6 +17,9 @@ export function Benefits() {
         <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary tracking-tight">
           Veja o Que Está Dentro do Kit
         </h2>
+        <p className="mt-4 text-lg text-muted-foreground font-medium max-w-2xl mx-auto">
+          Essas são apenas algumas das +250 dinâmicas que vêm dentro do Kit Tela Zero.
+        </p>
       </div>
 
       <div className="w-full relative">
@@ -24,6 +28,8 @@ export function Benefits() {
             width: 100%;
             overflow: hidden;
             position: relative;
+            /* Garante que eventos de mouse/toque não interfiram na animação se houver algum listener global */
+            pointer-events: none; 
           }
           
           .carousel-track {
