@@ -39,7 +39,6 @@ export function Benefits() {
     <section className="py-24 px-6 max-w-7xl mx-auto">
       <div className="text-center mb-16">
         <div className="flex flex-col items-center">
-          <span className="text-7xl sm:text-8xl font-black text-primary mb-2">+250</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary mb-4 tracking-tight">Veja o Que Está Dentro do Kit</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             O guia definitivo com tudo que você precisa para entreter seu filho de forma saudável e educativa.
