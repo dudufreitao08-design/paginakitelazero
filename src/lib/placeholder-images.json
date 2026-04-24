@@ -5,6 +5,54 @@
       "description": "Kit Tela Zero - Mockup do Produto",
       "imageUrl": "https://i.imgur.com/2kVjXxE.png",
       "imageHint": "product mockup"
+    },
+    {
+      "id": "carousel-1",
+      "description": "Foto do Produto 1",
+      "imageUrl": "https://i.imgur.com/UEQGYll.png",
+      "imageHint": "product interior"
+    },
+    {
+      "id": "carousel-2",
+      "description": "Foto do Produto 2",
+      "imageUrl": "https://i.imgur.com/JrX521y.png",
+      "imageHint": "activity page"
+    },
+    {
+      "id": "carousel-3",
+      "description": "Foto do Produto 3",
+      "imageUrl": "https://i.imgur.com/JwIOLtz.png",
+      "imageHint": "game dynamic"
+    },
+    {
+      "id": "carousel-4",
+      "description": "Foto do Produto 4",
+      "imageUrl": "https://i.imgur.com/svndWXX.png",
+      "imageHint": "educational material"
+    },
+    {
+      "id": "carousel-5",
+      "description": "Foto do Produto 5",
+      "imageUrl": "https://i.imgur.com/td2kbK6.png",
+      "imageHint": "family bonding"
+    },
+    {
+      "id": "carousel-6",
+      "description": "Foto do Produto 6",
+      "imageUrl": "https://i.imgur.com/rQp4z0M.png",
+      "imageHint": "kids playing"
+    },
+    {
+      "id": "carousel-7",
+      "description": "Foto do Produto 7",
+      "imageUrl": "https://i.imgur.com/tuiJyPz.png",
+      "imageHint": "printable cards"
+    },
+    {
+      "id": "carousel-8",
+      "description": "Foto do Produto 8",
+      "imageUrl": "https://i.imgur.com/dz6c4b7.png",
+      "imageHint": "complete kit"
     }
   ]
 }
