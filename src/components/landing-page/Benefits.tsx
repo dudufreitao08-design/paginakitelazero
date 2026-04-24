@@ -90,8 +90,7 @@ export function Benefits() {
             letter-spacing: 0.08em;
             text-transform: uppercase;
             margin-bottom: 12px;
-            padding-left: 20px;
-            text-align: left;
+            text-align: center;
           }
         `}} />
         
