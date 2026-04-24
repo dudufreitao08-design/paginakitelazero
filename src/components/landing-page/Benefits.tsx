@@ -5,10 +5,10 @@ import React from 'react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Benefits() {
-  // Filtrando apenas as imagens destinadas ao carrossel
+  // Filtrando apenas as imagens destinadas ao carrossel (ID começa com carousel-)
   const carouselImages = PlaceHolderImages.filter(img => img.id.startsWith('carousel-'));
   
-  // Duplicando as imagens para o efeito de loop infinito sem saltos
+  // Duplicando as 8 imagens para totalizar 16 e permitir o loop infinito suave
   const duplicatedImages = [...carouselImages, ...carouselImages];
 
   return (
@@ -25,15 +25,17 @@ export function Benefits() {
             width: 100%;
             overflow: hidden;
             position: relative;
+            cursor: grab;
           }
           
           .carousel-track {
             display: flex;
             width: max-content;
             animation: scroll-left 35s linear infinite;
+            will-change: transform;
           }
           
-          .carousel-track:hover {
+          .carousel-container:hover .carousel-track {
             animation-play-state: paused;
           }
 
@@ -46,22 +48,21 @@ export function Benefits() {
             }
           }
 
-          .kit-slot {
+          .kit-image-slot {
             flex-shrink: 0;
             margin-right: 16px;
             background-color: #F0F4FF;
             border: 1px solid #E0E7FF;
             border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             position: relative;
             overflow: hidden;
+            user-select: none;
+            -webkit-user-drag: none;
           }
 
           /* Desktop Dimensions */
           @media (min-width: 768px) {
-            .kit-slot {
+            .kit-image-slot {
               width: 260px;
               height: 340px;
             }
@@ -69,21 +70,28 @@ export function Benefits() {
 
           /* Mobile Dimensions */
           @media (max-width: 767px) {
-            .kit-slot {
+            .kit-image-slot {
               width: 200px;
               height: 260px;
             }
+          }
+
+          .kit-image-slot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            pointer-events: none;
           }
         `}} />
         
         <div className="carousel-container">
           <div className="carousel-track">
             {duplicatedImages.map((img, index) => (
-              <div key={`${img.id}-${index}`} className="kit-slot">
+              <div key={`${img.id}-${index}`} className="kit-image-slot">
                 <img 
                   src={img.imageUrl} 
                   alt={img.description} 
-                  className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
                 />
               </div>
