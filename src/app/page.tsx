@@ -1,7 +1,7 @@
 import React from 'react';
 import { TopBar } from '@/components/landing-page/TopBar';
 import { Hero } from '@/components/landing-page/Hero';
-import { PainSection } from '@/components/landing-page/PainSection';
+import { TargetAudience } from '@/components/landing-page/TargetAudience';
 import { Benefits } from '@/components/landing-page/Benefits';
 import { Bonuses } from '@/components/landing-page/Bonuses';
 import { Testimonials } from '@/components/landing-page/Testimonials';
@@ -10,6 +10,7 @@ import { Guarantee } from '@/components/landing-page/Guarantee';
 import { FAQ } from '@/components/landing-page/FAQ';
 import { FinalCTA } from '@/components/landing-page/FinalCTA';
 import { Footer } from '@/components/landing-page/Footer';
+import { StickyCTA } from '@/components/landing-page/StickyCTA';
 
 export default function Home() {
   return (
@@ -20,8 +21,8 @@ export default function Home() {
       {/* 2. Hero Section */}
       <Hero />
       
-      {/* 3. Mini Seção de Dor */}
-      <PainSection />
+      {/* 3. Para Quem é Este Material (Substituindo PainSection para maior conversão) */}
+      <TargetAudience />
       
       {/* 4. O que você recebe */}
       <Benefits />
@@ -46,6 +47,9 @@ export default function Home() {
       
       {/* 11. Rodapé */}
       <Footer />
+
+      {/* 12. Botão Flutuante Mobile */}
+      <StickyCTA />
     </main>
   );
 }
