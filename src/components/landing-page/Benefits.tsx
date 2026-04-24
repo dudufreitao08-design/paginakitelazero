@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -82,8 +83,8 @@ export function Benefits() {
 
           .category-label {
             font-family: 'Poppins', sans-serif;
-            font-size: 16px;
-            font-weight: 600;
+            font-size: 18px;
+            font-weight: 800;
             color: #2563EB;
             letter-spacing: 0.08em;
             text-transform: uppercase;
