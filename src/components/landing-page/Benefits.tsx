@@ -81,7 +81,23 @@ export function Benefits() {
             display: block;
             pointer-events: none;
           }
+
+          .category-label {
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: #2563EB;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            padding-left: 20px;
+            text-align: left;
+          }
         `}} />
+        
+        <div className="category-label">
+          ✦ Atividades
+        </div>
         
         <div className="carousel-container">
           <div className="carousel-track">
