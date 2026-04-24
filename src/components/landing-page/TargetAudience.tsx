@@ -6,12 +6,11 @@ export function TargetAudience() {
     "Mães e pais que sofrem ao ver o filho todo dia no celular",
     "Você já tentou tirar a tela e virou briga ou choro",
     "Você não sabe o que oferecer no lugar quando tira o celular",
-    "Você sente que está perdendo momentos reais com seu filho",
-    "Você quer uma solução prática para usar ainda hoje"
+    "Você sente que está perdendo momentos reais com seu filho"
   ];
 
   return (
-    <section className="bg-white py-24 px-6 font-body">
+    <section className="bg-white py-24 px-6 font-body border-y border-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold text-secondary uppercase tracking-tight">
