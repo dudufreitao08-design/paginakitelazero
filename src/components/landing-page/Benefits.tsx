@@ -24,7 +24,6 @@ export function Benefits() {
             width: 100%;
             overflow: hidden;
             position: relative;
-            cursor: grab;
           }
           
           .carousel-track {
@@ -32,10 +31,6 @@ export function Benefits() {
             width: max-content;
             animation: scroll-left 35s linear infinite;
             will-change: transform;
-          }
-          
-          .carousel-container:hover .carousel-track {
-            animation-play-state: paused;
           }
 
           @keyframes scroll-left {
@@ -55,8 +50,6 @@ export function Benefits() {
             border-radius: 12px;
             position: relative;
             overflow: hidden;
-            user-select: none;
-            -webkit-user-drag: none;
           }
 
           /* Desktop Dimensions */
