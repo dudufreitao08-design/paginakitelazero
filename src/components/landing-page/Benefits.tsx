@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -28,7 +27,6 @@ export function Benefits() {
             width: 100%;
             overflow: hidden;
             position: relative;
-            /* Garante que eventos de mouse/toque não interfiram na animação se houver algum listener global */
             pointer-events: none; 
           }
           
@@ -84,7 +82,7 @@ export function Benefits() {
 
           .category-label {
             font-family: 'Poppins', sans-serif;
-            font-size: 13px;
+            font-size: 16px;
             font-weight: 600;
             color: #2563EB;
             letter-spacing: 0.08em;
@@ -95,7 +93,7 @@ export function Benefits() {
         `}} />
         
         <div className="category-label">
-          ✦ Atividades
+          Atividades
         </div>
         
         <div className="carousel-container">
