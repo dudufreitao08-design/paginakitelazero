@@ -5,11 +5,13 @@ import React from 'react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Benefits() {
-  // Filtrando apenas as imagens destinadas ao carrossel (ID começa com carousel-)
-  const carouselImages = PlaceHolderImages.filter(img => img.id.startsWith('carousel-'));
-  
-  // Duplicando as 8 imagens para totalizar 16 e permitir o loop infinito suave
-  const duplicatedImages = [...carouselImages, ...carouselImages];
+  // Primeiro carrossel (8 imagens)
+  const carousel1Images = PlaceHolderImages.filter(img => img.id.startsWith('carousel-'));
+  const duplicatedCarousel1 = [...carousel1Images, ...carousel1Images];
+
+  // Segundo carrossel (7 imagens)
+  const carousel2Images = PlaceHolderImages.filter(img => img.id.startsWith('extra-'));
+  const duplicatedCarousel2 = [...carousel2Images, ...carousel2Images];
 
   return (
     <section className="py-24 overflow-hidden bg-white">
@@ -38,13 +40,21 @@ export function Benefits() {
             will-change: transform;
           }
 
+          .carousel-track-reverse {
+            display: flex;
+            width: max-content;
+            animation: scroll-right 35s linear infinite;
+            will-change: transform;
+          }
+
           @keyframes scroll-left {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(-50%);
-            }
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+
+          @keyframes scroll-right {
+            0% { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
           }
 
           .kit-image-slot {
@@ -83,7 +93,7 @@ export function Benefits() {
 
           .category-label {
             font-family: 'Poppins', sans-serif;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 800;
             color: #2563EB;
             letter-spacing: 0.08em;
@@ -97,10 +107,26 @@ export function Benefits() {
           Atividades
         </div>
         
-        <div className="carousel-container">
+        {/* Primeiro Carrossel (Esquerda) */}
+        <div className="carousel-container mb-4">
           <div className="carousel-track">
-            {duplicatedImages.map((img, index) => (
-              <div key={`${img.id}-${index}`} className="kit-image-slot">
+            {duplicatedCarousel1.map((img, index) => (
+              <div key={`c1-${img.id}-${index}`} className="kit-image-slot">
+                <img 
+                  src={img.imageUrl} 
+                  alt={img.description} 
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Segundo Carrossel (Direita) */}
+        <div className="carousel-container mt-4">
+          <div className="carousel-track-reverse">
+            {duplicatedCarousel2.map((img, index) => (
+              <div key={`c2-${img.id}-${index}`} className="kit-image-slot">
                 <img 
                   src={img.imageUrl} 
                   alt={img.description} 
