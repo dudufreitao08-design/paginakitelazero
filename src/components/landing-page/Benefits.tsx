@@ -2,13 +2,14 @@
 "use client";
 
 import React from 'react';
-import { ImageIcon } from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Benefits() {
-  const slots = [1, 2, 3, 4, 5, 6, 7, 8];
+  // Filtrando apenas as imagens destinadas ao carrossel
+  const carouselImages = PlaceHolderImages.filter(img => img.id.startsWith('carousel-'));
   
-  // Duplicando os slots para o efeito de loop infinito sem saltos
-  const duplicatedSlots = [...slots, ...slots];
+  // Duplicando as imagens para o efeito de loop infinito sem saltos
+  const duplicatedImages = [...carouselImages, ...carouselImages];
 
   return (
     <section className="py-24 overflow-hidden bg-white">
@@ -77,16 +78,14 @@ export function Benefits() {
         
         <div className="carousel-container">
           <div className="carousel-track">
-            {duplicatedSlots.map((num, index) => (
-              <div key={index} className="kit-slot">
+            {duplicatedImages.map((img, index) => (
+              <div key={`${img.id}-${index}`} className="kit-slot">
                 <img 
-                  src="" 
-                  alt={`Imagem do kit ${num}`} 
+                  src={img.imageUrl} 
+                  alt={img.description} 
                   className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
                 />
-                <div className="relative z-10">
-                  <ImageIcon size={48} className="text-[#CBD5E1]" strokeWidth={1.5} />
-                </div>
               </div>
             ))}
           </div>
