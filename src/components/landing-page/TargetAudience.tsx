@@ -16,9 +16,6 @@ export function TargetAudience() {
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
             Para Quem é Este Material?
           </h2>
-          <p className="text-sm md:text-lg text-white/60 max-w-2xl mx-auto">
-            Se você já viveu alguma dessas situações, o Kit Tela Zero foi feito para você.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
