@@ -14,18 +14,24 @@ export function Hero() {
           +250 Dinâmicas Interativas Para <span className="text-primary">Tirar Seu Filho da Tela</span>
         </h1>
         
-        <div className="w-full max-w-3xl py-4 sm:py-8 flex justify-center">
-          {heroImage && (
-            <Image 
-              src={heroImage.imageUrl}
-              alt={heroImage.description}
-              width={600}
-              height={400}
-              className="object-contain"
-              priority
-              data-ai-hint={heroImage.imageHint}
-            />
-          )}
+        <div className="w-full max-w-3xl py-4 sm:py-8 flex flex-col items-center">
+          <div className="flex justify-center mb-6">
+            {heroImage && (
+              <Image 
+                src={heroImage.imageUrl}
+                alt={heroImage.description}
+                width={600}
+                height={400}
+                className="object-contain"
+                priority
+                data-ai-hint={heroImage.imageHint}
+              />
+            )}
+          </div>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl font-medium leading-relaxed">
+            Atividades e brincadeiras prontas para usar em casa junto com a família. <br className="hidden sm:block" />
+            Imprima e comece hoje.
+          </p>
         </div>
 
         <div className="flex flex-col items-center space-y-4 w-full">
