@@ -11,8 +11,8 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden pt-12 pb-16 px-6 max-w-7xl mx-auto">
       <div className="flex flex-col items-center text-center space-y-8">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-secondary leading-[1.1] max-w-[18ch] sm:max-w-4xl tracking-tight">
-          +250 Dinâmicas Interativas Para <span className="text-primary">Tirar Seu Filho da Tela</span>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-secondary leading-[1.1] max-w-[24ch] sm:max-w-4xl tracking-tight">
+          +250 Dinâmicas Interativas Para <span className="text-primary">Tirar Seu Filho da Tela</span> + Bonus
         </h1>
         
         <div className="w-full max-w-6xl py-2 flex flex-col items-center">
