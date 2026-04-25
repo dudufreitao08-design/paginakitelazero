@@ -187,7 +187,7 @@ export function Benefits() {
         {/* Subheadline posicionada abaixo do último carrossel */}
         <div className="max-w-7xl mx-auto px-6 text-center">
           <p className="text-lg text-muted-foreground font-medium max-w-2xl mx-auto">
-            Essas são apenas algumas das +250 dinâmicas que vêm dentro do <span className="text-primary font-bold">Kit Tela Zero</span>.
+            Essas são apenas algumas das +250 dinâmicas interativas que vêm dentro do <span className="text-primary font-bold">Kit Tela Zero</span>.
           </p>
         </div>
       </div>
