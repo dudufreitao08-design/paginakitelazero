@@ -15,16 +15,16 @@ export function Hero() {
           +250 Dinâmicas Interativas Para <span className="text-primary">Tirar Seu Filho da Tela</span>
         </h1>
         
-        <div className="w-full max-w-5xl py-2 flex flex-col items-center">
+        <div className="w-full max-w-6xl py-2 flex flex-col items-center">
           <div className="flex justify-center mb-8 w-full">
             {heroImage && (
               <div className="relative w-full flex justify-center">
                 <Image 
                   src={heroImage.imageUrl}
                   alt={heroImage.description}
-                  width={1000}
-                  height={667}
-                  className="object-contain w-full h-auto max-w-[95%] sm:max-w-full mix-blend-multiply"
+                  width={1200}
+                  height={800}
+                  className="object-contain w-full h-auto max-w-full mix-blend-multiply"
                   priority
                   data-ai-hint={heroImage.imageHint}
                 />
