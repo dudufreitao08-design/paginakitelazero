@@ -49,9 +49,6 @@ export function Benefits() {
         <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary tracking-tight">
           Veja o Que Está Dentro do Kit
         </h2>
-        <p className="mt-4 text-lg text-muted-foreground font-medium max-w-2xl mx-auto">
-          Essas são apenas algumas das +250 dinâmicas que vêm dentro do Kit Tela Zero.
-        </p>
       </div>
 
       <div className="w-full relative">
@@ -173,7 +170,7 @@ export function Benefits() {
         <div className="category-label mt-12">
           MOLDES PARA RECORTAR
         </div>
-        <div className="carousel-container">
+        <div className="carousel-container mb-12">
           <div className="carousel-track">
             {duplicatedCarousel3.map((url, index) => (
               <div key={`c3-${index}`} className="kit-image-slot">
@@ -185,6 +182,13 @@ export function Benefits() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Subheadline posicionada abaixo do último carrossel */}
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <p className="text-lg text-muted-foreground font-medium max-w-2xl mx-auto">
+            Essas são apenas algumas das +250 dinâmicas que vêm dentro do Kit Tela Zero.
+          </p>
         </div>
       </div>
     </section>
