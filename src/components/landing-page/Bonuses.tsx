@@ -1,4 +1,5 @@
 import React from 'react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Bonuses() {
   const bonuses = [
@@ -6,26 +7,31 @@ export function Bonuses() {
       id: 1,
       name: "Detetive em Família",
       originalPrice: "R$ 37,00",
+      imageId: "extra-1"
     },
     {
       id: 2,
       name: "Guia: Como Tirar o Celular Sem Choro e Sem Briga",
       originalPrice: "R$ 47,00",
+      imageId: "extra-2"
     },
     {
       id: 3,
       name: "30 Moldes Para Recortar e Montar",
       originalPrice: "R$ 29,00",
+      imageId: "extra-3"
     },
     {
       id: 4,
       name: "Rotina Sem Tela — Planner Semanal",
       originalPrice: "R$ 27,00",
+      imageId: "extra-4"
     },
     {
       id: 5,
       name: "Do Caos à Calma — 20 Técnicas Rápidas",
       originalPrice: "R$ 37,00",
+      imageId: "extra-5"
     }
   ];
 
@@ -42,38 +48,47 @@ export function Bonuses() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {bonuses.map((bonus, index) => (
-            <div 
-              key={bonus.id} 
-              className={`bg-white p-4 rounded-[12px] border-2 border-dashed border-amber-400 flex flex-col shadow-sm transition-transform hover:scale-[1.02] ${
-                index === 4 ? 'md:col-span-2 md:max-w-[calc(50%-8px)] md:mx-auto w-full' : ''
-              }`}
-            >
-              {/* Image Placeholder */}
-              <div className="w-full h-[200px] bg-gray-100 rounded-[8px] overflow-hidden mb-4">
-                <img 
-                  src="" 
-                  alt={bonus.name} 
-                  className="w-full h-full object-cover"
-                />
-              </div>
+          {bonuses.map((bonus, index) => {
+            const placeholder = PlaceHolderImages.find(img => img.id === bonus.imageId);
+            
+            return (
+              <div 
+                key={bonus.id} 
+                className={`bg-white p-4 rounded-[12px] border-2 border-dashed border-amber-400 flex flex-col shadow-sm transition-transform hover:scale-[1.02] ${
+                  index === 4 ? 'md:col-span-2 md:max-w-[calc(50%-8px)] md:mx-auto w-full' : ''
+                }`}
+              >
+                {/* Image Container */}
+                <div className="w-full h-[200px] bg-gray-100 rounded-[8px] overflow-hidden mb-4 flex items-center justify-center">
+                  {placeholder ? (
+                    <img 
+                      src={placeholder.imageUrl} 
+                      alt={bonus.name} 
+                      className="w-full h-full object-cover"
+                      data-ai-hint={placeholder.imageHint}
+                    />
+                  ) : (
+                    <div className="text-muted-foreground text-sm font-medium">Visual do Bônus</div>
+                  )}
+                </div>
 
-              {/* Bonus Name */}
-              <h3 className="text-[15px] font-semibold text-[#1A1A2E] text-center mb-3 font-body min-h-[40px] flex items-center justify-center">
-                {bonus.name}
-              </h3>
+                {/* Bonus Name */}
+                <h3 className="text-[15px] font-semibold text-[#1A1A2E] text-center mb-3 font-body min-h-[40px] flex items-center justify-center">
+                  {bonus.name}
+                </h3>
 
-              {/* Pricing Row */}
-              <div className="flex items-center justify-center gap-3">
-                <span className="text-[14px] text-[#999] line-through font-medium">
-                  {bonus.originalPrice}
-                </span>
-                <div className="bg-[#22C55E] text-white text-[13px] font-bold px-[14px] py-[4px] rounded-full">
-                  GRÁTIS!
+                {/* Pricing Row */}
+                <div className="flex items-center justify-center gap-3">
+                  <span className="text-[14px] text-[#999] line-through font-medium">
+                    {bonus.originalPrice}
+                  </span>
+                  <div className="bg-[#22C55E] text-white text-[13px] font-bold px-[14px] py-[4px] rounded-full">
+                    GRÁTIS!
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
