@@ -35,7 +35,7 @@ export function Benefits() {
     "https://i.imgur.com/AW0MxZ1.png",
     "https://i.imgur.com/dpXWogx.png",
     "https://i.imgur.com/1qeeZCA.png",
-    "https://i.imgur.com/EEH1WFV.png",
+    "https://i.imgur.com/eEH1WFV.png",
     "https://i.imgur.com/bYOF4dU.png",
     "https://i.imgur.com/CQ96d3m.png",
     "https://i.imgur.com/Xk1s9FK.png",
@@ -73,13 +73,6 @@ export function Benefits() {
             display: flex;
             width: max-content;
             animation: scroll-right 35s linear infinite;
-            will-change: transform;
-          }
-
-          .carousel-track-3 {
-            display: flex;
-            width: max-content;
-            animation: scroll-left 40s linear infinite;
             will-change: transform;
           }
 
@@ -130,7 +123,7 @@ export function Benefits() {
 
           .category-label {
             font-family: 'Poppins', sans-serif;
-            font-size: 18px;
+            font-size: 22px;
             font-weight: 800;
             color: #2563EB;
             letter-spacing: 0.08em;
@@ -159,7 +152,7 @@ export function Benefits() {
         </div>
 
         {/* Segundo Carrossel (Brincadeiras) */}
-        <div className="category-label">
+        <div className="category-label mt-12">
           Brincadeiras
         </div>
         <div className="carousel-container mb-8">
@@ -177,11 +170,11 @@ export function Benefits() {
         </div>
 
         {/* Terceiro Carrossel (Moldes para Recortar) */}
-        <div className="category-label mt-8">
+        <div className="category-label mt-12">
           MOLDES PARA RECORTAR
         </div>
         <div className="carousel-container">
-          <div className="carousel-track-3">
+          <div className="carousel-track">
             {duplicatedCarousel3.map((url, index) => (
               <div key={`c3-${index}`} className="kit-image-slot">
                 <img 
