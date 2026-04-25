@@ -79,7 +79,7 @@ export function Benefits() {
           .carousel-track-3 {
             display: flex;
             width: max-content;
-            animation: scroll-right 40s linear infinite;
+            animation: scroll-left 40s linear infinite;
             will-change: transform;
           }
 
