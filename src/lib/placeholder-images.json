@@ -95,6 +95,12 @@
       "description": "Atividade Extra 7",
       "imageUrl": "https://i.imgur.com/qW1KWQU.png",
       "imageHint": "extra activity 7"
+    },
+    {
+      "id": "guarantee-seal",
+      "description": "Selo de Garantia 7 Dias",
+      "imageUrl": "https://img.cdndsgni.com/preview/10002431.jpg",
+      "imageHint": "guarantee seal"
     }
   ]
 }
