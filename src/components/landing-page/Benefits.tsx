@@ -138,19 +138,6 @@ export function Benefits() {
             margin-bottom: 12px;
             text-align: center;
           }
-
-          .category-label-small {
-            font-family: 'Poppins', sans-serif;
-            font-size: 13px;
-            font-weight: 600;
-            color: #2563EB;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            margin-top: 32px;
-            margin-bottom: 12px;
-            padding-left: 20px;
-            text-align: left;
-          }
         `}} />
         
         {/* Primeiro Carrossel (Atividades) */}
@@ -190,8 +177,8 @@ export function Benefits() {
         </div>
 
         {/* Terceiro Carrossel (Moldes para Recortar) */}
-        <div className="category-label-small">
-          ✦ MOLDES PARA RECORTAR
+        <div className="category-label mt-8">
+          MOLDES PARA RECORTAR
         </div>
         <div className="carousel-container">
           <div className="carousel-track-3">
