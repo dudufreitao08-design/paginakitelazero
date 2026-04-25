@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -14,7 +15,7 @@ export function TopBar() {
   }, []);
 
   return (
-    <div className="w-full bg-primary text-white py-2 px-4 text-center text-xs sm:text-sm font-bold tracking-wide uppercase">
+    <div className="w-full bg-red-600 text-white py-2 px-4 text-center text-xs sm:text-sm font-bold tracking-wide uppercase">
       🔥OFERTA EXCLUSIVA APENAS HOJE - {formattedDate || '...'}
     </div>
   );
