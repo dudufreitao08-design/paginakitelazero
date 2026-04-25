@@ -65,14 +65,14 @@ export function Benefits() {
           .carousel-track {
             display: flex;
             width: max-content;
-            animation: scroll-left 35s linear infinite;
+            animation: scroll-left 25s linear infinite;
             will-change: transform;
           }
 
           .carousel-track-reverse {
             display: flex;
             width: max-content;
-            animation: scroll-right 35s linear infinite;
+            animation: scroll-right 25s linear infinite;
             will-change: transform;
           }
 
@@ -123,7 +123,7 @@ export function Benefits() {
 
           .category-label {
             font-family: 'Poppins', sans-serif;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 800;
             color: #2563EB;
             letter-spacing: 0.08em;
