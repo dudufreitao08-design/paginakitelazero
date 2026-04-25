@@ -111,7 +111,7 @@ export function Benefits() {
         </div>
         
         {/* Primeiro Carrossel (Esquerda) */}
-        <div className="carousel-container mb-4">
+        <div className="carousel-container mb-8">
           <div className="carousel-track">
             {duplicatedCarousel1.map((img, index) => (
               <div key={`c1-${img.id}-${index}`} className="kit-image-slot">
@@ -123,6 +123,10 @@ export function Benefits() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="category-label">
+          Brincadeiras
         </div>
 
         {/* Segundo Carrossel (Direita) */}
