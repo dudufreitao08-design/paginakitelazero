@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { CheckCircle2 } from 'lucide-react';
@@ -10,18 +11,18 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden pt-12 pb-16 px-6 max-w-7xl mx-auto">
       <div className="flex flex-col items-center text-center space-y-6">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-secondary leading-tight max-w-3xl tracking-tight">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-secondary leading-tight max-w-3xl tracking-tight">
           +250 Dinâmicas Interativas Para <span className="text-primary">Tirar Seu Filho da Tela</span>
         </h1>
         
-        <div className="w-full max-w-4xl py-4 sm:py-6 flex flex-col items-center">
+        <div className="w-full max-w-5xl py-4 sm:py-6 flex flex-col items-center">
           <div className="flex justify-center mb-6 w-full">
             {heroImage && (
               <Image 
                 src={heroImage.imageUrl}
                 alt={heroImage.description}
-                width={800}
-                height={533}
+                width={1000}
+                height={667}
                 className="object-contain w-full h-auto"
                 priority
                 data-ai-hint={heroImage.imageHint}
