@@ -4,33 +4,28 @@ export function Bonuses() {
   const bonuses = [
     {
       id: 1,
-      name: "50 Desafios em Família",
-      desc: "Para fortalecer os laços e criar memórias inesquecíveis.",
-      value: "R$ 27"
+      name: "Detetive em Família",
+      originalPrice: "R$ 37,00",
     },
     {
       id: 2,
-      name: "30 Experiências Sensoriais",
-      desc: "Estimulação tátil e cognitiva para crianças de 2 a 8 anos.",
-      value: "R$ 37"
+      name: "Guia: Como Tirar o Celular Sem Choro e Sem Briga",
+      originalPrice: "R$ 47,00",
     },
     {
       id: 3,
-      name: "30 Moldes Para Recortar",
-      desc: "Atividades manuais para desenvolver a coordenação motora.",
-      value: "R$ 29"
+      name: "30 Moldes Para Recortar e Montar",
+      originalPrice: "R$ 29,00",
     },
     {
       id: 4,
-      name: "Guia: Como Tirar Sem Choro",
-      desc: "O método psicológico para o desmame digital sem traumas.",
-      value: "R$ 47"
+      name: "Rotina Sem Tela — Planner Semanal",
+      originalPrice: "R$ 27,00",
     },
     {
       id: 5,
-      name: "Atividades Por Faixa Etária",
-      desc: "Vá direto ao que funciona para a idade do seu filho.",
-      value: "R$ 57"
+      name: "Do Caos à Calma — 20 Técnicas Rápidas",
+      originalPrice: "R$ 37,00",
     }
   ];
 
@@ -46,16 +41,36 @@ export function Bonuses() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {bonuses.map((bonus) => (
-            <div key={bonus.id} className="bg-white p-6 rounded-3xl border border-gray-100 flex items-center space-x-6 shadow-sm">
-              <div className="flex-shrink-0 w-14 h-14 bg-primary text-white rounded-2xl flex items-center justify-center font-bold text-xl">
-                #{bonus.id}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {bonuses.map((bonus, index) => (
+            <div 
+              key={bonus.id} 
+              className={`bg-white p-4 rounded-[12px] border-2 border-dashed border-amber-400 flex flex-col shadow-sm transition-transform hover:scale-[1.02] ${
+                index === 4 ? 'md:col-span-2 md:max-w-[calc(50%-8px)] md:mx-auto w-full' : ''
+              }`}
+            >
+              {/* Image Placeholder */}
+              <div className="w-full h-[200px] bg-gray-100 rounded-[8px] overflow-hidden mb-4">
+                <img 
+                  src="" 
+                  alt={bonus.name} 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="flex-grow">
-                <h3 className="font-bold text-secondary text-lg">{bonus.name}</h3>
-                <p className="text-sm text-muted-foreground mb-1">{bonus.desc}</p>
-                <span className="text-xs font-bold text-blue-600 uppercase">Valor original: {bonus.value}</span>
+
+              {/* Bonus Name */}
+              <h3 className="text-[15px] font-semibold text-[#1A1A2E] text-center mb-3 font-body min-h-[40px] flex items-center justify-center">
+                {bonus.name}
+              </h3>
+
+              {/* Pricing Row */}
+              <div className="flex items-center justify-center gap-3">
+                <span className="text-[14px] text-[#999] line-through font-medium">
+                  {bonus.originalPrice}
+                </span>
+                <div className="bg-[#22C55E] text-white text-[13px] font-bold px-[14px] py-[4px] rounded-full">
+                  GRÁTIS!
+                </div>
               </div>
             </div>
           ))}
