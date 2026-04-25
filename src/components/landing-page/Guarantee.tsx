@@ -23,7 +23,7 @@ export function Guarantee() {
         <div className="text-center md:text-left">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-secondary mb-4">Garantia Incondicional de 7 Dias</h2>
           <p className="text-lg text-secondary/80 leading-relaxed">
-            Se por qualquer motivo você achar que o Kit Tela Zero não é para você, basta nos enviar um e-mail. Devolvemos 100% do seu dinheiro, sem perguntas e sem burocracia. O risco é todo nosso.
+            7 dias de garantia total. Se não gostar, devolvemos 100% do seu dinheiro. O risco é nosso.
           </p>
         </div>
       </div>
