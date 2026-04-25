@@ -21,7 +21,7 @@ export function Guarantee() {
           )}
         </div>
         <div className="text-center md:text-left">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-secondary mb-4">Garantia Incondicional de 7 Dias</h2>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-secondary mb-4">Garantia de 7 Dias</h2>
           <p className="text-lg text-secondary/80 leading-relaxed">
             7 dias de garantia total. Se não gostar, devolvemos 100% do seu dinheiro. O risco é nosso.
           </p>
