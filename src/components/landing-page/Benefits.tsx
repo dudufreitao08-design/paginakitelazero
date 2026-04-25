@@ -67,19 +67,19 @@ export function Benefits() {
             overflow: hidden;
           }
 
-          /* Desktop Dimensions */
+          /* Desktop Dimensions - Increased for better readability */
           @media (min-width: 768px) {
             .kit-image-slot {
-              width: 260px;
-              height: 340px;
+              width: 380px;
+              height: 500px;
             }
           }
 
-          /* Mobile Dimensions */
+          /* Mobile Dimensions - Increased for better readability */
           @media (max-width: 767px) {
             .kit-image-slot {
-              width: 200px;
-              height: 260px;
+              width: 280px;
+              height: 370px;
             }
           }
 
@@ -93,12 +93,12 @@ export function Benefits() {
 
           .category-label {
             font-family: 'Poppins', sans-serif;
-            font-size: 20px;
+            font-size: 24px;
             font-weight: 800;
             color: #2563EB;
             letter-spacing: 0.08em;
             text-transform: uppercase;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             text-align: center;
           }
         `}} />
