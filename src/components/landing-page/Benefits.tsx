@@ -1,17 +1,47 @@
-
 "use client";
 
 import React from 'react';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Benefits() {
-  // Primeiro carrossel (8 imagens)
-  const carousel1Images = PlaceHolderImages.filter(img => img.id.startsWith('carousel-'));
+  // Imagens do Primeiro Carrossel (Atividades)
+  const carousel1Images = [
+    "https://i.imgur.com/UEQGYll.png",
+    "https://i.imgur.com/JrX521y.png",
+    "https://i.imgur.com/JwIOLtz.png",
+    "https://i.imgur.com/svndWXX.png",
+    "https://i.imgur.com/td2kbK6.png",
+    "https://i.imgur.com/rQp4z0M.png",
+    "https://i.imgur.com/tuiJyPz.png",
+    "https://i.imgur.com/dz6c4b7.png"
+  ];
   const duplicatedCarousel1 = [...carousel1Images, ...carousel1Images];
 
-  // Segundo carrossel (7 imagens)
-  const carousel2Images = PlaceHolderImages.filter(img => img.id.startsWith('extra-'));
+  // Imagens do Segundo Carrossel (Brincadeiras)
+  const carousel2Images = [
+    "https://i.imgur.com/llVfldx.png",
+    "https://i.imgur.com/KplOKMA.png",
+    "https://i.imgur.com/LqFyufy.png",
+    "https://i.imgur.com/hgBUoyz.png",
+    "https://i.imgur.com/YowOvUt.png",
+    "https://i.imgur.com/PkI2DAP.png",
+    "https://i.imgur.com/qW1KWQU.png"
+  ];
   const duplicatedCarousel2 = [...carousel2Images, ...carousel2Images];
+
+  // Imagens do Terceiro Carrossel (Moldes para Recortar)
+  const carousel3Images = [
+    "https://i.imgur.com/6OxX40T.png",
+    "https://i.imgur.com/52JYbAe.png",
+    "https://i.imgur.com/AW0MxZ1.png",
+    "https://i.imgur.com/dpXWogx.png",
+    "https://i.imgur.com/1qeeZCA.png",
+    "https://i.imgur.com/EEH1WFV.png",
+    "https://i.imgur.com/bYOF4dU.png",
+    "https://i.imgur.com/CQ96d3m.png",
+    "https://i.imgur.com/Xk1s9FK.png",
+    "https://i.imgur.com/H4GEmTI.png"
+  ];
+  const duplicatedCarousel3 = [...carousel3Images, ...carousel3Images];
 
   return (
     <section className="py-24 overflow-hidden bg-white">
@@ -30,7 +60,6 @@ export function Benefits() {
             width: 100%;
             overflow: hidden;
             position: relative;
-            pointer-events: none; 
           }
           
           .carousel-track {
@@ -44,6 +73,13 @@ export function Benefits() {
             display: flex;
             width: max-content;
             animation: scroll-right 35s linear infinite;
+            will-change: transform;
+          }
+
+          .carousel-track-3 {
+            display: flex;
+            width: max-content;
+            animation: scroll-right 40s linear infinite;
             will-change: transform;
           }
 
@@ -74,7 +110,6 @@ export function Benefits() {
           @media (min-width: 768px) {
             .kit-image-slot {
               width: 220px;
-              height: auto;
             }
           }
 
@@ -82,7 +117,6 @@ export function Benefits() {
           @media (max-width: 767px) {
             .kit-image-slot {
               width: 160px;
-              height: auto;
             }
           }
 
@@ -96,28 +130,40 @@ export function Benefits() {
 
           .category-label {
             font-family: 'Poppins', sans-serif;
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 800;
             color: #2563EB;
             letter-spacing: 0.08em;
             text-transform: uppercase;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             text-align: center;
+          }
+
+          .category-label-small {
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: #2563EB;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            padding-left: 20px;
+            text-align: left;
           }
         `}} />
         
+        {/* Primeiro Carrossel (Atividades) */}
         <div className="category-label">
           Atividades
         </div>
-        
-        {/* Primeiro Carrossel (Esquerda) */}
         <div className="carousel-container mb-8">
           <div className="carousel-track">
-            {duplicatedCarousel1.map((img, index) => (
-              <div key={`c1-${img.id}-${index}`} className="kit-image-slot">
+            {duplicatedCarousel1.map((url, index) => (
+              <div key={`c1-${index}`} className="kit-image-slot">
                 <img 
-                  src={img.imageUrl} 
-                  alt={img.description} 
+                  src={url} 
+                  alt={`Imagem do kit ${index + 1}`} 
                   loading="lazy"
                 />
               </div>
@@ -125,18 +171,35 @@ export function Benefits() {
           </div>
         </div>
 
+        {/* Segundo Carrossel (Brincadeiras) */}
         <div className="category-label">
           Brincadeiras
         </div>
-
-        {/* Segundo Carrossel (Direita) */}
-        <div className="carousel-container mt-4">
+        <div className="carousel-container mb-8">
           <div className="carousel-track-reverse">
-            {duplicatedCarousel2.map((img, index) => (
-              <div key={`c2-${img.id}-${index}`} className="kit-image-slot">
+            {duplicatedCarousel2.map((url, index) => (
+              <div key={`c2-${index}`} className="kit-image-slot">
                 <img 
-                  src={img.imageUrl} 
-                  alt={img.description} 
+                  src={url} 
+                  alt={`Imagem do kit ${index + 1}`} 
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Terceiro Carrossel (Moldes para Recortar) */}
+        <div className="category-label-small">
+          ✦ MOLDES PARA RECORTAR
+        </div>
+        <div className="carousel-container">
+          <div className="carousel-track-3">
+            {duplicatedCarousel3.map((url, index) => (
+              <div key={`c3-${index}`} className="kit-image-slot">
+                <img 
+                  src={url} 
+                  alt={`Imagem do kit ${index + 1}`} 
                   loading="lazy"
                 />
               </div>
