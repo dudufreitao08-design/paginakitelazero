@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden pt-12 pb-16 px-6 max-w-7xl mx-auto">
       <div className="flex flex-col items-center text-center space-y-8">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-secondary leading-[1.1] max-w-[20ch] sm:max-w-4xl tracking-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-secondary leading-[1.1] max-w-[18ch] sm:max-w-4xl tracking-tight">
           +250 Dinâmicas Interativas Para <span className="text-primary">Tirar Seu Filho da Tela</span>
         </h1>
         
@@ -24,7 +24,7 @@ export function Hero() {
                   alt={heroImage.description}
                   width={1000}
                   height={667}
-                  className="object-contain w-full h-auto max-w-[95%] sm:max-w-full drop-shadow-2xl"
+                  className="object-contain w-full h-auto max-w-[95%] sm:max-w-full mix-blend-multiply"
                   priority
                   data-ai-hint={heroImage.imageHint}
                 />
