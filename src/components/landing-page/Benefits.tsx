@@ -60,35 +60,38 @@ export function Benefits() {
           .kit-image-slot {
             flex-shrink: 0;
             margin-right: 16px;
-            background-color: #F0F4FF;
+            background-color: #ffffff;
             border: 1px solid #E0E7FF;
             border-radius: 12px;
             position: relative;
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
 
-          /* Desktop Dimensions - Increased for better readability */
+          /* Desktop Dimensions */
           @media (min-width: 768px) {
             .kit-image-slot {
-              width: 380px;
-              height: 500px;
+              width: 220px;
+              height: auto;
             }
           }
 
-          /* Mobile Dimensions - Increased for better readability */
+          /* Mobile Dimensions */
           @media (max-width: 767px) {
             .kit-image-slot {
-              width: 280px;
-              height: 370px;
+              width: 160px;
+              height: auto;
             }
           }
 
           .kit-image-slot img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
+            object-fit: contain;
             display: block;
-            pointer-events: none;
+            background-color: #ffffff;
           }
 
           .category-label {
