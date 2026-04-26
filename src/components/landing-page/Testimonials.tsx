@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 export function Testimonials() {
   const reviews = [
@@ -8,21 +9,24 @@ export function Testimonials() {
       location: "Belo Horizonte, MG",
       child: "Mãe de menina de 5 anos",
       text: "Minha filha ficou mais de 1 hora fazendo as atividades sem pedir o celular uma vez. Não acreditei quando vi. Comprei sem esperar muito e me surpreendi demais.",
-      initials: "CR"
+      initials: "CR",
+      image: "https://i.imgur.com/tOA8HoU.jpeg"
     },
     {
       name: "Rafael Oliveira",
       location: "Curitiba, PR",
       child: "Pai de menino de 7 anos",
       text: "Fui eu quem comprou para minha esposa e hoje os dois usamos com nosso filho. O guia de como tirar o celular sem briga foi o que mais nos ajudou. Mudou nossa rotina de verdade.",
-      initials: "RO"
+      initials: "RO",
+      image: "https://i.imgur.com/gYGEUVo.jpeg"
     },
     {
       name: "Juliana Mendes",
       location: "São Paulo, SP",
       child: "Mãe de menino de 8 anos",
       text: "Já tentei de tudo para tirar o celular do meu filho. O Kit Tela Zero foi a primeira coisa que realmente funcionou. No mesmo dia que recebi já usei três atividades.",
-      initials: "JM"
+      initials: "JM",
+      image: "https://i.imgur.com/os855un.jpeg"
     }
   ];
 
@@ -40,9 +44,12 @@ export function Testimonials() {
             </div>
             <p className="text-secondary italic mb-8 flex-grow leading-relaxed">"{review.text}"</p>
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-[#2563EB] rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0">
-                {review.initials}
-              </div>
+              <Avatar className="w-12 h-12 shrink-0 border border-gray-100">
+                <AvatarImage src={review.image} alt={review.name} className="object-cover" />
+                <AvatarFallback className="bg-[#2563EB] text-white font-bold text-sm">
+                  {review.initials}
+                </AvatarFallback>
+              </Avatar>
               <div>
                 <h4 className="font-bold text-secondary text-sm">{review.name}</h4>
                 <p className="text-xs text-muted-foreground">{review.child} · {review.location}</p>
