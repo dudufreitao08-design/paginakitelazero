@@ -73,6 +73,10 @@ export function Pricing() {
                 <Check className="mr-2 h-[14px] w-[14px] text-[#2563EB] flex-shrink-0" />
                 <span className="leading-tight">Suporte via WhatsApp</span>
               </li>
+              <li className="flex items-center font-medium text-[#1A1A2E] text-[13px] mb-[10px]">
+                <Check className="mr-2 h-[14px] w-[14px] text-[#2563EB] flex-shrink-0" />
+                <span className="leading-tight">Atualizações Futuras</span>
+              </li>
             </ul>
             
             <Button asChild className="w-full h-20 text-xl font-black bg-primary hover:bg-primary/90 rounded-2xl shadow-[0_6px_0_0_#1d4ed8] active:translate-y-1 active:shadow-none transition-all">
