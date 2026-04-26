@@ -43,7 +43,7 @@ export function Bonuses() {
             Bônus Exclusivos do <span className="text-primary">Kit</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Leve esses 5 materiais extras gratuitamente ao escolher a oferta completa.
+            Ao levar o Kit Tela Zero hoje você recebe tudo isso de brinde
           </p>
         </div>
 
