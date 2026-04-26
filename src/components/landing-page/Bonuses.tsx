@@ -24,7 +24,7 @@ export function Bonuses() {
     {
       id: 4,
       name: "Rotina Sem Tela — Planner Semanal",
-      originalPrice: "R$ 27,00",
+      originalPrice: "R$ 29,00",
       imageId: "extra-4"
     },
     {
