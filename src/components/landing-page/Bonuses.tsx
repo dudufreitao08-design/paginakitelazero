@@ -91,7 +91,7 @@ export function Bonuses() {
         {/* Resumo de Valor */}
         <div className="mx-auto max-w-[400px] mt-8 bg-white border-2 border-dashed border-[#2563EB] rounded-[12px] p-6 font-body">
           <div className="flex justify-between items-center mb-2">
-            <span className="text-[15px] font-medium text-[#888888]">Total em Bônus:</span>
+            <span className="text-[15px] font-medium text-[#1A1A2E]">Total em Bônus:</span>
             <span className="text-[15px] text-[#888888] line-through">R$ 197,00</span>
           </div>
           <div className="flex justify-between items-center">
