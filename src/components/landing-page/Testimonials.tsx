@@ -4,32 +4,32 @@ import { Star } from 'lucide-react';
 export function Testimonials() {
   const reviews = [
     {
-      name: "Mariana S.",
-      location: "Curitiba, PR",
-      child: "Mãe do Theo (4 anos)",
-      text: "Eu não acreditava que ele ia largar o tablet por um papel, mas as dinâmicas são tão simples e envolventes que ele mesmo pede para brincar agora. O Guia do Carro salvou minhas idas ao mercado!",
-      avatarUrl: "https://i.imgur.com/tOA8HoU.jpeg"
-    },
-    {
-      name: "Camila R.",
-      location: "São Paulo, SP",
-      child: "Mãe da Alice (6 anos)",
-      text: "O investimento mais barato que já fiz pela paz da minha casa. As birras diminuíram 90% porque ela agora tem o que fazer. Recomendo para todas as minhas amigas que sofrem com o vício em tela.",
-      avatarUrl: "https://i.imgur.com/gYGEUVo.jpeg"
-    },
-    {
-      name: "Fernanda L.",
+      name: "Camila Rodrigues",
       location: "Belo Horizonte, MG",
-      child: "Mãe do João (3 anos)",
-      text: "As experiências sensoriais são incríveis! Meu filho passa horas focado. O material é muito caprichado e prático. Imprimi em casa mesmo e já comecei a usar no mesmo dia.",
-      avatarUrl: "https://i.imgur.com/os855un.jpeg"
+      child: "Mãe de menina de 5 anos",
+      text: "Minha filha ficou mais de 1 hora fazendo as atividades sem pedir o celular uma vez. Não acreditei quando vi. Comprei sem esperar muito e me surpreendi demais.",
+      initials: "CR"
+    },
+    {
+      name: "Rafael Oliveira",
+      location: "Curitiba, PR",
+      child: "Pai de menino de 7 anos",
+      text: "Fui eu quem comprou para minha esposa e hoje os dois usamos com nosso filho. O guia de como tirar o celular sem briga foi o que mais nos ajudou. Mudou nossa rotina de verdade.",
+      initials: "RO"
+    },
+    {
+      name: "Juliana Mendes",
+      location: "São Paulo, SP",
+      child: "Mãe de menino de 8 anos",
+      text: "Já tentei de tudo para tirar o celular do meu filho. O Kit Tela Zero foi a primeira coisa que realmente funcionou. No mesmo dia que recebi já usei três atividades.",
+      initials: "JM"
     }
   ];
 
   return (
     <section className="py-24 px-6 max-w-7xl mx-auto">
       <div className="text-center mb-16">
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary">O que outros pais estão dizendo</h2>
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary tracking-tight">O Que os Pais Estão Dizendo</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -40,12 +40,8 @@ export function Testimonials() {
             </div>
             <p className="text-secondary italic mb-8 flex-grow leading-relaxed">"{review.text}"</p>
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center overflow-hidden border border-gray-100">
-                <img 
-                  src={review.avatarUrl} 
-                  alt={review.name} 
-                  className="w-full h-full object-cover"
-                />
+              <div className="w-12 h-12 bg-[#2563EB] rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0">
+                {review.initials}
               </div>
               <div>
                 <h4 className="font-bold text-secondary text-sm">{review.name}</h4>
