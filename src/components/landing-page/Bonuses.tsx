@@ -23,7 +23,7 @@ export function Bonuses() {
     },
     {
       id: 4,
-      name: "Rotina Sem Tela — Planner Semanal",
+      name: "60 Historinhas Para Ler Antes De Dormir",
       originalPrice: "R$ 29,00",
       imageId: "extra-4"
     },
