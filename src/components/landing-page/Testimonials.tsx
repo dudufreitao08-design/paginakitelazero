@@ -8,7 +8,7 @@ export function Testimonials() {
       name: "Camila Rodrigues",
       location: "Belo Horizonte, MG",
       child: "Mãe de menina de 5 anos",
-      text: "Minha filha ficou mais de 1 hora fazendo as atividades sem pedir o celular uma vez. Não acreditei quando vi. Comprei sem esperar muito e me surpreendi demais.",
+      text: "Minha filha ficou 1 hora sem pedir o celular. 1 hora!! Eu fiquei olhando sem acreditar kkkkk. Vale muito!",
       initials: "CR",
       image: "https://i.imgur.com/tOA8HoU.jpeg"
     },
@@ -16,7 +16,7 @@ export function Testimonials() {
       name: "Rafael Oliveira",
       location: "Curitiba, PR",
       child: "Pai de menino de 7 anos",
-      text: "Fui eu quem comprou para minha esposa e hoje os dois usamos com nosso filho. O guia de como tirar o celular sem briga foi o que mais nos ajudou. Mudou nossa rotina de verdade.",
+      text: "Fui eu quem comprou e hoje toda a família usa. O guia de tirar o celular sem briga mudou nossa rotina. Recomendo demais.",
       initials: "RO",
       image: "https://i.imgur.com/gYGEUVo.jpeg"
     },
@@ -24,7 +24,7 @@ export function Testimonials() {
       name: "Juliana Mendes",
       location: "São Paulo, SP",
       child: "Mãe de menino de 8 anos",
-      text: "Já tentei de tudo para tirar o celular do meu filho. O Kit Tela Zero foi a primeira coisa que realmente funcionou. No mesmo dia que recebi já usei três atividades.",
+      text: "Já tentei de tudo e nada funcionava. No mesmo dia que recebi já usei e meu filho engajou na hora. Não esperava não kkk",
       initials: "JM",
       image: "https://i.imgur.com/os855un.jpeg"
     }
