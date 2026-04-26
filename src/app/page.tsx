@@ -10,7 +10,6 @@ import { Guarantee } from '@/components/landing-page/Guarantee';
 import { FAQ } from '@/components/landing-page/FAQ';
 import { FinalCTA } from '@/components/landing-page/FinalCTA';
 import { Footer } from '@/components/landing-page/Footer';
-import { StickyCTA } from '@/components/landing-page/StickyCTA';
 
 export default function Home() {
   return (
@@ -47,9 +46,6 @@ export default function Home() {
       
       {/* 11. Rodapé */}
       <Footer />
-
-      {/* 12. Botão Flutuante Mobile */}
-      <StickyCTA />
     </main>
   );
 }
