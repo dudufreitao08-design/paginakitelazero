@@ -60,26 +60,22 @@ export function Pricing() {
               </div>
             </div>
             
-            <ul className="space-y-4 mb-10">
-              <li className="flex items-center font-semibold text-secondary text-lg">
-                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
-                <span className="whitespace-nowrap">+250 Dinâmicas Interativas (PDF)</span>
+            <ul className="mb-10 pl-4 pr-6">
+              <li className="flex items-center font-medium text-[#1A1A2E] text-[13px] mb-[10px]">
+                <Check className="mr-2 h-[14px] w-[14px] text-[#2563EB] flex-shrink-0" />
+                <span className="leading-tight">+250 Dinâmicas Interativas</span>
               </li>
-              <li className="flex items-center font-semibold text-secondary text-lg">
-                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
-                <span className="whitespace-nowrap">Categorias Casa, Carro e Rua</span>
+              <li className="flex items-center font-medium text-[#1A1A2E] text-[13px] mb-[10px]">
+                <Check className="mr-2 h-[14px] w-[14px] text-[#2563EB] flex-shrink-0" />
+                <span className="leading-tight">Acesso vitalício</span>
               </li>
-              <li className="flex items-center font-semibold text-secondary text-lg">
-                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
-                <span className="text-primary whitespace-nowrap">Todos os 5 Bônus Inclusos</span>
+              <li className="flex items-center font-medium text-[#1A1A2E] text-[13px] mb-[10px]">
+                <Check className="mr-2 h-[14px] w-[14px] text-[#2563EB] flex-shrink-0" />
+                <span className="leading-tight">Todos os bônus inclusos gratuitamente</span>
               </li>
-              <li className="flex items-center font-semibold text-secondary text-lg">
-                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
-                <span className="whitespace-nowrap">Acesso Vitalício e Atualizações</span>
-              </li>
-              <li className="flex items-center font-semibold text-secondary text-lg">
-                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
-                <span className="whitespace-nowrap">Suporte via WhatsApp</span>
+              <li className="flex items-center font-medium text-[#1A1A2E] text-[13px] mb-[10px]">
+                <Check className="mr-2 h-[14px] w-[14px] text-[#2563EB] flex-shrink-0" />
+                <span className="leading-tight">Suporte via WhatsApp</span>
               </li>
             </ul>
             
