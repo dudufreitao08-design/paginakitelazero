@@ -8,7 +8,6 @@ import { Testimonials } from '@/components/landing-page/Testimonials';
 import { Pricing } from '@/components/landing-page/Pricing';
 import { Guarantee } from '@/components/landing-page/Guarantee';
 import { FAQ } from '@/components/landing-page/FAQ';
-import { FinalCTA } from '@/components/landing-page/FinalCTA';
 import { Footer } from '@/components/landing-page/Footer';
 
 export default function Home() {
@@ -41,10 +40,7 @@ export default function Home() {
       {/* 9. Seção de FAQ */}
       <FAQ />
       
-      {/* 10. CTA final */}
-      <FinalCTA />
-      
-      {/* 11. Rodapé */}
+      {/* 10. Rodapé */}
       <Footer />
     </main>
   );
