@@ -58,8 +58,8 @@ export function Bonuses() {
                   index === 4 ? 'md:col-span-2 md:max-w-[calc(50%-8px)] md:mx-auto w-full' : ''
                 }`}
               >
-                {/* Image Container */}
-                <div className="w-full h-[200px] bg-gray-100 rounded-[8px] overflow-hidden mb-4 flex items-center justify-center">
+                {/* Image Container - Increased height to 280px for better illustration */}
+                <div className="w-full h-[280px] bg-gray-100 rounded-[8px] overflow-hidden mb-4 flex items-center justify-center">
                   {placeholder ? (
                     <img 
                       src={placeholder.imageUrl} 
