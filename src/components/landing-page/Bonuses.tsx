@@ -79,7 +79,7 @@ export function Bonuses() {
 
                 {/* Pricing Row */}
                 <div className="flex items-center justify-center gap-3">
-                  <span className="text-[14px] text-[#999] line-through font-medium">
+                  <span className="text-[14px] text-red-600 line-through font-medium">
                     {bonus.originalPrice}
                   </span>
                   <div className="bg-[#22C55E] text-white text-[13px] font-bold px-[14px] py-[4px] rounded-full">
