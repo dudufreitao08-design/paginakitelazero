@@ -16,7 +16,7 @@ export function Testimonials() {
       name: "Rafael Oliveira",
       location: "Curitiba, PR",
       child: "Pai de menino de 7 anos",
-      text: "Fui eu quem comprou e hoje toda a família usa. O Kit Tela Zero realmente mudou nossa rotina com nossos filhos. Recomendo demais.",
+      text: "Fui eu quem comprou e hoje toda a família usa. O Kit Tela Zero realmente mudou nossa rotina com nossas filhas. Recomendo demais.",
       initials: "RO",
       image: "https://i.imgur.com/gYGEUVo.jpeg"
     },
