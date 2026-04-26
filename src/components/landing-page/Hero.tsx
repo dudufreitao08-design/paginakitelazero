@@ -1,12 +1,9 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { CheckCircle2 } from 'lucide-react';
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { CssMockup } from './CssMockup';
 
 export function Hero() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-product');
-
   return (
     <section className="relative overflow-hidden pt-12 pb-16 px-6 max-w-7xl mx-auto">
       <div className="flex flex-col items-center text-center space-y-8">
@@ -16,19 +13,7 @@ export function Hero() {
         
         <div className="w-full max-w-6xl py-2 flex flex-col items-center">
           <div className="flex justify-center mb-8 w-full">
-            {heroImage && (
-              <div className="relative w-full flex justify-center">
-                <Image 
-                  src={heroImage.imageUrl}
-                  alt={heroImage.description}
-                  width={1200}
-                  height={800}
-                  className="object-contain w-full h-auto max-w-full mix-blend-multiply"
-                  priority
-                  data-ai-hint={heroImage.imageHint}
-                />
-              </div>
-            )}
+            <CssMockup />
           </div>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl font-medium leading-relaxed px-4">
             Atividades e brincadeiras prontas para usar em casa junto com a família. <br className="hidden sm:block" />
