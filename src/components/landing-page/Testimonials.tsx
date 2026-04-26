@@ -8,21 +8,21 @@ export function Testimonials() {
       location: "Curitiba, PR",
       child: "Mãe do Theo (4 anos)",
       text: "Eu não acreditava que ele ia largar o tablet por um papel, mas as dinâmicas são tão simples e envolventes que ele mesmo pede para brincar agora. O Guia do Carro salvou minhas idas ao mercado!",
-      initials: "MS"
+      avatarUrl: "https://i.imgur.com/tOA8HoU.jpeg"
     },
     {
       name: "Camila R.",
       location: "São Paulo, SP",
       child: "Mãe da Alice (6 anos)",
       text: "O investimento mais barato que já fiz pela paz da minha casa. As birras diminuíram 90% porque ela agora tem o que fazer. Recomendo para todas as minhas amigas que sofrem com o vício em tela.",
-      initials: "CR"
+      avatarUrl: "https://i.imgur.com/gYGEUVo.jpeg"
     },
     {
       name: "Fernanda L.",
       location: "Belo Horizonte, MG",
       child: "Mãe do João (3 anos)",
       text: "As experiências sensoriais são incríveis! Meu filho passa horas focado. O material é muito caprichado e prático. Imprimi em casa mesmo e já comecei a usar no mesmo dia.",
-      initials: "FL"
+      avatarUrl: "https://i.imgur.com/os855un.jpeg"
     }
   ];
 
@@ -40,8 +40,12 @@ export function Testimonials() {
             </div>
             <p className="text-secondary italic mb-8 flex-grow leading-relaxed">"{review.text}"</p>
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-accent text-accent-foreground rounded-full flex items-center justify-center font-bold">
-                {review.initials}
+              <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center overflow-hidden border border-gray-100">
+                <img 
+                  src={review.avatarUrl} 
+                  alt={review.name} 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <h4 className="font-bold text-secondary text-sm">{review.name}</h4>
