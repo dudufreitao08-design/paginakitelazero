@@ -40,7 +40,7 @@ export function Bonuses() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary mb-4">
-            Bônus Exclusivos do <span className="text-primary">Plano Premium</span>
+            Bônus Exclusivos do <span className="text-primary">Kit</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Leve esses 5 materiais extras gratuitamente ao escolher a oferta completa.
