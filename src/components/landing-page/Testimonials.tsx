@@ -24,7 +24,7 @@ export function Testimonials() {
       name: "Juliana Mendes",
       location: "São Paulo, SP",
       child: "Mãe de menino de 8 anos",
-      text: "Já tentei de tudo e nada funcionava. No mesmo dia que recebi já usei e meu filho engajou na hora. Não esperava não kkk",
+      text: "Já tentei de tudo e nada funcionava. No mesmo dia que recebi, eu e meu filho usamos e tivemos um momento único.",
       initials: "JM",
       image: "https://i.imgur.com/os855un.jpeg"
     }
