@@ -11,7 +11,7 @@ export function Bonuses() {
     },
     {
       id: 2,
-      name: "Guia: Como Tirar o Celular Sem Choro e Sem Briga",
+      name: "100 Atividades Lúdicas",
       originalPrice: "R$ 47,00",
       imageId: "extra-2"
     },
