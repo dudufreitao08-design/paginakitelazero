@@ -56,45 +56,33 @@
     },
     {
       "id": "extra-1",
-      "description": "Atividade Extra 1",
-      "imageUrl": "https://i.imgur.com/llVfldx.png",
-      "imageHint": "extra activity 1"
+      "description": "Bônus: Detetive em Família",
+      "imageUrl": "https://i.imgur.com/SBqiLo6.jpeg",
+      "imageHint": "detective game"
     },
     {
       "id": "extra-2",
-      "description": "Atividade Extra 2",
-      "imageUrl": "https://i.imgur.com/KplOKMA.png",
-      "imageHint": "extra activity 2"
+      "description": "Bônus: Guia Tirar Celular",
+      "imageUrl": "https://i.imgur.com/L2pBdVL.jpeg",
+      "imageHint": "parenting guide"
     },
     {
       "id": "extra-3",
-      "description": "Atividade Extra 3",
-      "imageUrl": "https://i.imgur.com/LqFyufy.png",
-      "imageHint": "extra activity 3"
+      "description": "Bônus: 30 Moldes",
+      "imageUrl": "https://i.imgur.com/RCSgEeL.jpeg",
+      "imageHint": "printable crafts"
     },
     {
       "id": "extra-4",
-      "description": "Atividade Extra 4",
-      "imageUrl": "https://i.imgur.com/hgBUoyz.png",
-      "imageHint": "extra activity 4"
+      "description": "Bônus: Planner Semanal",
+      "imageUrl": "https://i.imgur.com/pb7733J.jpeg",
+      "imageHint": "weekly planner"
     },
     {
       "id": "extra-5",
-      "description": "Atividade Extra 5",
-      "imageUrl": "https://i.imgur.com/YowOvUt.png",
-      "imageHint": "extra activity 5"
-    },
-    {
-      "id": "extra-6",
-      "description": "Atividade Extra 6",
-      "imageUrl": "https://i.imgur.com/PkI2DAP.png",
-      "imageHint": "extra activity 6"
-    },
-    {
-      "id": "extra-7",
-      "description": "Atividade Extra 7",
-      "imageUrl": "https://i.imgur.com/qW1KWQU.png",
-      "imageHint": "extra activity 7"
+      "description": "Bônus: Do Caos à Calma",
+      "imageUrl": "https://i.imgur.com/9vv5nHW.jpeg",
+      "imageHint": "emotional techniques"
     },
     {
       "id": "guarantee-seal",
