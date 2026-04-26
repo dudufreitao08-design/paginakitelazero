@@ -58,17 +58,17 @@ export function Bonuses() {
                   index === 4 ? 'md:col-span-2 md:max-w-[calc(50%-8px)] md:mx-auto w-full' : ''
                 }`}
               >
-                {/* Image Container - Increased height to 280px for better illustration */}
-                <div className="w-full h-[280px] bg-gray-100 rounded-[8px] overflow-hidden mb-4 flex items-center justify-center">
+                {/* Image Container - Set to auto height to respect original aspect ratio */}
+                <div className="w-full h-auto rounded-[8px] overflow-hidden mb-4 flex items-center justify-center">
                   {placeholder ? (
                     <img 
                       src={placeholder.imageUrl} 
                       alt={bonus.name} 
-                      className="w-full h-full object-cover"
+                      className="w-full h-auto object-contain"
                       data-ai-hint={placeholder.imageHint}
                     />
                   ) : (
-                    <div className="text-muted-foreground text-sm font-medium">Visual do Bônus</div>
+                    <div className="text-muted-foreground text-sm font-medium p-8 bg-gray-100 w-full text-center rounded-lg">Visual do Bônus</div>
                   )}
                 </div>
 
