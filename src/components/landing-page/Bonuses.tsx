@@ -5,7 +5,7 @@ export function Bonuses() {
   const bonuses = [
     {
       id: 1,
-      name: "Detetive em Família",
+      name: "100 Mini Jogos",
       originalPrice: "R$ 37,00",
       imageId: "extra-1"
     },
