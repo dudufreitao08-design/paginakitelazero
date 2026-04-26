@@ -29,7 +29,7 @@ export function Bonuses() {
     },
     {
       id: 5,
-      name: "Do Caos à Calma — 20 Técnicas Rápidas",
+      name: "50 Charadas Para Resolver em Família",
       originalPrice: "R$ 37,00",
       imageId: "extra-5"
     }
