@@ -51,7 +51,7 @@ export function Pricing() {
               <h3 className="text-2xl sm:text-3xl font-bold text-secondary mb-2">Kit Completo</h3>
               <div className="flex flex-col items-center">
                 <span className="text-lg font-bold text-primary mb-1">
-                  <span className="line-through opacity-70">De R$ 67</span> por APENAS:
+                  <span className="line-through opacity-70">De R$ 197</span> por APENAS:
                 </span>
                 <div className="flex items-baseline">
                   <span className="text-2xl font-bold text-secondary">R$</span>
