@@ -71,10 +71,6 @@ export function Pricing() {
               </li>
               <li className="flex items-center font-medium text-[#1A1A2E] text-[13px] mb-[10px]">
                 <Check className="mr-2 h-[14px] w-[14px] text-[#2563EB] flex-shrink-0" />
-                <span className="leading-tight">Todos os bônus inclusos gratuitamente</span>
-              </li>
-              <li className="flex items-center font-medium text-[#1A1A2E] text-[13px] mb-[10px]">
-                <Check className="mr-2 h-[14px] w-[14px] text-[#2563EB] flex-shrink-0" />
                 <span className="leading-tight">Suporte via WhatsApp</span>
               </li>
             </ul>
