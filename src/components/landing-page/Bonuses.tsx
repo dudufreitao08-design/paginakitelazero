@@ -18,7 +18,7 @@ export function Bonuses() {
     {
       id: 3,
       name: "30 Moldes Para Recortar e Montar",
-      originalPrice: "R$ 29,00",
+      originalPrice: "R$ 37,00",
       imageId: "extra-3"
     },
     {
