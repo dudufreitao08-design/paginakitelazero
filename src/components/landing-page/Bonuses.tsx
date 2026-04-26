@@ -40,7 +40,7 @@ export function Bonuses() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary mb-4">
-            Bônus Exclusivos do Kit
+            <span className="text-primary">Bônus Exclusivos</span> do Kit
           </h2>
           <p className="text-lg text-muted-foreground">
             Ao levar o Kit Tela Zero hoje você recebe tudo isso de brinde
