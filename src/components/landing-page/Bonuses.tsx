@@ -17,7 +17,7 @@ export function Bonuses() {
     },
     {
       id: 3,
-      name: "30 Moldes Para Recortar e Montar",
+      name: "70 Quebra-Cabeças",
       originalPrice: "R$ 37,00",
       imageId: "extra-3"
     },
