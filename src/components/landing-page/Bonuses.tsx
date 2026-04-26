@@ -58,7 +58,6 @@ export function Bonuses() {
                   index === 4 ? 'md:col-span-2 md:max-w-[calc(50%-8px)] md:mx-auto w-full' : ''
                 }`}
               >
-                {/* Image Container - Set to auto height to respect original aspect ratio */}
                 <div className="w-full h-auto rounded-[8px] overflow-hidden mb-4 flex items-center justify-center">
                   {placeholder ? (
                     <img 
@@ -72,12 +71,10 @@ export function Bonuses() {
                   )}
                 </div>
 
-                {/* Bonus Name */}
                 <h3 className="text-[15px] font-semibold text-[#1A1A2E] text-center mb-3 font-body min-h-[40px] flex items-center justify-center">
                   {bonus.name}
                 </h3>
 
-                {/* Pricing Row */}
                 <div className="flex items-center justify-center gap-3">
                   <span className="text-[14px] text-red-600 line-through font-medium">
                     {bonus.originalPrice}
@@ -89,6 +86,18 @@ export function Bonuses() {
               </div>
             );
           })}
+        </div>
+
+        {/* Resumo de Valor */}
+        <div className="mx-auto max-w-[400px] mt-8 bg-white border-2 border-dashed border-[#2563EB] rounded-[12px] p-6 font-body">
+          <div className="flex justify-between items-center mb-2">
+            <span className="text-[15px] font-medium text-[#888888]">Total em Bônus:</span>
+            <span className="text-[15px] text-[#888888] line-through">R$ 197,00</span>
+          </div>
+          <div className="flex justify-between items-center">
+            <span className="text-[18px] font-bold text-[#1A1A2E]">Hoje:</span>
+            <span className="text-[22px] font-extrabold text-[#22C55E]">GRÁTIS!</span>
+          </div>
         </div>
       </div>
     </section>
