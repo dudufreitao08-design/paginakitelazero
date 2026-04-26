@@ -28,10 +28,6 @@ export function Pricing() {
               </li>
               <li className="flex items-center text-lg font-medium text-secondary">
                 <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
-                <span className="whitespace-nowrap">Atividades Para Casa, Carro e Rua</span>
-              </li>
-              <li className="flex items-center text-lg font-medium text-secondary">
-                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
                 <span className="whitespace-nowrap">Acesso Imediato</span>
               </li>
               <li className="flex items-center text-lg font-medium text-secondary">
