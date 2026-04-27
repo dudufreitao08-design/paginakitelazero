@@ -19,7 +19,7 @@ export function Pricing() {
             <div className="flex flex-col items-center mb-6">
               <div className="flex items-baseline justify-center">
                 <span className="text-2xl font-bold text-secondary">R$</span>
-                <span className="text-5xl font-extrabold text-secondary">10</span>
+                <span className="text-5xl font-extrabold text-secondary">10,00</span>
               </div>
             </div>
             
