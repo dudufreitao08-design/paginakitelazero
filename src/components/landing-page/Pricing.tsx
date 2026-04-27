@@ -63,20 +63,20 @@ export function Pricing() {
             </div>
             
             <ul className="mb-10 pl-4 pr-6">
-              <li className="flex items-center font-medium text-[#1A1A2E] text-[13px] mb-[10px]">
-                <Check className="mr-2 h-[14px] w-[14px] text-[#2563EB] flex-shrink-0" />
+              <li className="flex items-center font-medium text-[#1A1A2E] text-[15px] mb-[12px]">
+                <Check className="mr-2 h-[18px] w-[18px] text-[#2563EB] flex-shrink-0" />
                 <span className="leading-tight">+250 Dinâmicas Interativas</span>
               </li>
-              <li className="flex items-center font-medium text-[#1A1A2E] text-[13px] mb-[10px]">
-                <Check className="mr-2 h-[14px] w-[14px] text-[#2563EB] flex-shrink-0" />
+              <li className="flex items-center font-medium text-[#1A1A2E] text-[15px] mb-[12px]">
+                <Check className="mr-2 h-[18px] w-[18px] text-[#2563EB] flex-shrink-0" />
                 <span className="leading-tight">Acesso vitalício</span>
               </li>
-              <li className="flex items-center font-medium text-[#1A1A2E] text-[13px] mb-[10px]">
-                <Check className="mr-2 h-[14px] w-[14px] text-[#2563EB] flex-shrink-0" />
+              <li className="flex items-center font-medium text-[#1A1A2E] text-[15px] mb-[12px]">
+                <Check className="mr-2 h-[18px] w-[18px] text-[#2563EB] flex-shrink-0" />
                 <span className="leading-tight">Suporte via WhatsApp</span>
               </li>
-              <li className="flex items-center font-medium text-[#1A1A2E] text-[13px] mb-[10px]">
-                <Check className="mr-2 h-[14px] w-[14px] text-[#2563EB] flex-shrink-0" />
+              <li className="flex items-center font-medium text-[#1A1A2E] text-[15px] mb-[12px]">
+                <Check className="mr-2 h-[18px] w-[18px] text-[#2563EB] flex-shrink-0" />
                 <span className="leading-tight">Atualizações Futuras</span>
               </li>
             </ul>
