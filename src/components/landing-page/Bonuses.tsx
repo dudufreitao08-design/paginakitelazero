@@ -1,5 +1,6 @@
 import React from 'react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Button } from '@/components/ui/button';
 
 export function Bonuses() {
   const bonuses = [
@@ -98,6 +99,15 @@ export function Bonuses() {
             <span className="text-[18px] font-bold text-[#1A1A2E]">Hoje:</span>
             <span className="text-[22px] font-extrabold text-[#22C55E]">GRÁTIS!</span>
           </div>
+        </div>
+
+        {/* Botão CTA da seção de bônus */}
+        <div className="mt-10 flex justify-center">
+          <Button asChild className="w-full sm:w-auto h-20 text-xl font-black bg-primary hover:bg-primary/90 rounded-2xl px-12 shadow-[0_8px_0_0_#1d4ed8] active:translate-y-1 active:shadow-none transition-all">
+            <a href="#precos">
+              QUERO O KIT + BÔNUS
+            </a>
+          </Button>
         </div>
       </div>
     </section>
