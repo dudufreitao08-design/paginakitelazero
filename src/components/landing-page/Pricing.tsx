@@ -7,7 +7,9 @@ export function Pricing() {
     <section id="precos" className="py-24 px-6 bg-white overflow-hidden">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary mb-4">Escolha Seu Kit Ideal</h2>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary mb-4">
+            Escolha Seu <span className="text-primary">Kit Ideal</span>
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
