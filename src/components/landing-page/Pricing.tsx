@@ -81,7 +81,7 @@ export function Pricing() {
               </li>
               <li className="flex items-center font-medium text-[#1A1A2E] text-[15px] mb-[12px]">
                 <span className="mr-2 text-[18px] flex-shrink-0">🎁</span>
-                <span className="leading-tight">100 Mini Jogos Para se Divertir</span>
+                <span className="leading-tight">100 Mini Jogos</span>
               </li>
               <li className="flex items-center font-medium text-[#1A1A2E] text-[15px] mb-[12px]">
                 <span className="mr-2 text-[18px] flex-shrink-0">🎁</span>
@@ -89,15 +89,15 @@ export function Pricing() {
               </li>
               <li className="flex items-center font-medium text-[#1A1A2E] text-[15px] mb-[12px]">
                 <span className="mr-2 text-[18px] flex-shrink-0">🎁</span>
-                <span className="leading-tight">70 Quebra-Cabeças Para Brincar</span>
+                <span className="leading-tight">70 Quebra-Cabeças</span>
               </li>
               <li className="flex items-center font-medium text-[#1A1A2E] text-[15px] mb-[12px]">
                 <span className="mr-2 text-[18px] flex-shrink-0">🎁</span>
-                <span className="leading-tight">60 Historinhas Para Ler Antes de Dormir</span>
+                <span className="leading-tight">60 Historinhas</span>
               </li>
               <li className="flex items-center font-medium text-[#1A1A2E] text-[15px] mb-[12px]">
                 <span className="mr-2 text-[18px] flex-shrink-0">🎁</span>
-                <span className="leading-tight">50 Charadas Para Resolver em Família</span>
+                <span className="leading-tight">50 Charadas</span>
               </li>
             </ul>
             
