@@ -73,7 +73,7 @@ export function Pricing() {
               </li>
               <li className="flex items-center font-medium text-[#1A1A2E] text-[15px] mb-[12px]">
                 <Check className="mr-2 h-[18px] w-[18px] text-[#2563EB] flex-shrink-0" />
-                <span className="leading-tight">Suporte via WhatsApp</span>
+                <span className="leading-tight">Suporte Personalizado</span>
               </li>
               <li className="flex items-center font-medium text-[#1A1A2E] text-[15px] mb-[12px]">
                 <Check className="mr-2 h-[18px] w-[18px] text-[#2563EB] flex-shrink-0" />
