@@ -1,8 +1,23 @@
-import React from 'react';
+
+"use client";
+
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Check, X, ShieldCheck } from 'lucide-react';
+import { Check, ShieldCheck } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 export function Pricing() {
+  const [showUpsell, setShowUpsell] = useState(false);
+
+  const handleBasicClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setShowUpsell(true);
+  };
+
+  const closeUpsell = () => {
+    setShowUpsell(false);
+  };
+
   return (
     <section id="precos" className="py-24 px-6 bg-white overflow-hidden">
       <div className="max-w-5xl mx-auto">
@@ -38,8 +53,12 @@ export function Pricing() {
               </li>
             </ul>
             
-            <Button variant="outline" asChild className="w-full h-14 rounded-2xl font-bold border-2">
-              <a href="#">Comprar Básico</a>
+            <Button 
+              variant="outline" 
+              onClick={handleBasicClick}
+              className="w-full h-14 rounded-2xl font-bold border-2 cursor-pointer"
+            >
+              Comprar Básico
             </Button>
           </div>
 
@@ -113,6 +132,84 @@ export function Pricing() {
           </div>
         </div>
       </div>
+
+      {/* Popup de Upsell */}
+      {showUpsell && (
+        <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+          
+          <div className="relative bg-white w-full max-w-[380px] rounded-[16px] p-[28px_24px] shadow-2xl animate-in fade-in slide-in-from-bottom-8 duration-300">
+            <div className="flex flex-col items-center text-center">
+              {/* Badge */}
+              <div className="bg-[#2563EB] text-white text-[11px] font-bold py-[6px] px-[14px] rounded-[50px] uppercase tracking-wider">
+                🎁 OFERTA EXCLUSIVA PARA VOCÊ
+              </div>
+
+              {/* Título */}
+              <h4 className="text-[20px] font-[800] text-[#1A1A2E] mt-[16px] leading-tight">
+                Espera! Temos um presente para você
+              </h4>
+
+              {/* Subtítulo */}
+              <p className="text-[14px] text-[#666666] mt-[8px] leading-[1.6]">
+                Antes de finalizar, que tal levar o Kit Completo com todos os bônus por apenas R$7 a mais?
+              </p>
+
+              {/* Linha de preço */}
+              <div className="mt-[12px] flex flex-col items-center">
+                <div className="flex items-center gap-1 text-[13px]">
+                  <span className="text-[#999999]">De </span>
+                  <span className="text-[#999999] line-through">R$27,00</span>
+                  <span className="text-[#999999]"> por apenas</span>
+                </div>
+                <div className="text-[36px] font-[900] text-[#1A1A2E] leading-none mt-1">
+                  R$19,90
+                </div>
+              </div>
+
+              {/* Lista de itens */}
+              <div className="w-full max-w-[280px] mt-6 text-left">
+                {[
+                  "+250 Dinâmicas Interativas",
+                  "100 Mini Jogos",
+                  "100 Atividades Lúdicas",
+                  "70 Quebra-Cabeças",
+                  "60 Historinhas",
+                  "50 Charadas",
+                  "Acesso vitalício e suporte via WhatsApp"
+                ].map((item, idx) => (
+                  <div key={idx} className="flex items-start gap-2 mb-2">
+                    <Check className="h-4 w-4 text-[#2563EB] shrink-0 mt-0.5" strokeWidth={3} />
+                    <span className="text-[13px] font-[500] text-[#1A1A2E] leading-tight">
+                      {item}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Botão Principal */}
+              <Button asChild className="w-full h-auto py-[16px] bg-[#2563EB] hover:bg-[#2563EB]/90 text-white text-[15px] font-[700] rounded-[50px] mt-[20px] shadow-lg transition-all active:scale-95">
+                <a href="#">
+                  Sim! Quero o Kit Completo por R$19,90 →
+                </a>
+              </Button>
+
+              {/* Botão Secundário */}
+              <button 
+                onClick={closeUpsell}
+                className="w-full bg-transparent border-none text-[12px] text-[#999999] mt-[10px] cursor-pointer hover:text-[#666666] transition-colors font-medium"
+              >
+                Não, prefiro continuar só com o básico
+              </button>
+
+              {/* Texto de Segurança */}
+              <div className="mt-[8px] text-[11px] text-[#BBBBBB] font-medium">
+                🔒 Compra Segura · Acesso Imediato
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
