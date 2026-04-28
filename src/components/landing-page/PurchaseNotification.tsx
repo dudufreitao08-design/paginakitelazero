@@ -5,16 +5,16 @@ import { ShoppingBag } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const purchases = [
-  { name: "Ana Paula S.", city: "São Paulo, SP", time: "há 2 minutos" },
-  { name: "Marcos G.", city: "Curitiba, PR", time: "há 5 minutos" },
+  { name: "Ana Paula S.", city: "São Paulo, SP", time: "agora mesmo" },
+  { name: "Marcos G.", city: "Curitiba, PR", time: "há 2 minutos" },
   { name: "Juliana R.", city: "Belo Horizonte, MG", time: "há 1 minuto" },
   { name: "Ricardo S.", city: "Porto Alegre, RS", time: "há 3 minutos" },
-  { name: "Fernanda L.", city: "Rio de Janeiro, RJ", time: "há 7 minutos" },
-  { name: "Gustavo M.", city: "Brasília, DF", time: "há 4 minutos" },
-  { name: "Beatriz F.", city: "Salvador, BA", time: "há 6 minutos" },
-  { name: "Lucas W.", city: "Florianópolis, SC", time: "há 8 minutos" },
-  { name: "Camila O.", city: "Recife, PE", time: "há 2 minutos" },
-  { name: "Rafael T.", city: "Goiânia, GO", time: "há 9 minutos" }
+  { name: "Fernanda L.", city: "Rio de Janeiro, RJ", time: "há 1 minuto" },
+  { name: "Gustavo M.", city: "Brasília, DF", time: "agora mesmo" },
+  { name: "Beatriz F.", city: "Salvador, BA", time: "há 2 minutos" },
+  { name: "Lucas W.", city: "Florianópolis, SC", time: "há 3 minutos" },
+  { name: "Camila O.", city: "Recife, PE", time: "há 1 minuto" },
+  { name: "Rafael T.", city: "Goiânia, GO", time: "há 2 minutos" }
 ];
 
 export function PurchaseNotification() {
