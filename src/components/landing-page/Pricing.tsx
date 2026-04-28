@@ -103,7 +103,7 @@ export function Pricing() {
             </ul>
             
             <Button asChild className="w-full h-20 text-xl font-black bg-primary hover:bg-primary/90 rounded-2xl shadow-[0_6px_0_0_#1d4ed8] active:translate-y-1 active:shadow-none transition-all">
-              <a href="#">QUERO O COMPLETO AGORA</a>
+              <a href="#">QUERO O KIT COMPLETO</a>
             </Button>
             
             <div className="mt-6 flex items-center justify-center text-xs font-bold text-muted-foreground">
