@@ -57,7 +57,7 @@ export function Pricing() {
                 </span>
                 <div className="flex items-baseline">
                   <span className="text-2xl font-bold text-secondary">R$</span>
-                  <span className="text-6xl font-black text-secondary">19,90</span>
+                  <span className="text-6xl font-black text-secondary">27,00</span>
                 </div>
               </div>
             </div>
