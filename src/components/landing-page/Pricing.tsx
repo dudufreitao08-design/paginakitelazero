@@ -53,7 +53,7 @@ export function Pricing() {
               <h3 className="text-[26px] font-bold text-primary mt-[8px] mb-[12px]">Kit Completo</h3>
               <div className="flex flex-col items-center mb-[16px]">
                 <div className="mt-[4px] mb-[6px] text-center flex items-center justify-center gap-1">
-                  <span className="text-[13px] font-normal text-gray-500">De </span>
+                  <span className="text-[13px] font-semibold text-gray-500">De </span>
                   <span className="text-[15px] font-semibold text-gray-500 line-through">R$ 197</span>
                 </div>
                 <div className="flex items-baseline text-primary">
