@@ -55,7 +55,6 @@ export function Pricing() {
                 <div className="mt-[4px] mb-[6px] text-center flex items-center justify-center gap-1">
                   <span className="text-[13px] font-normal text-[#999999]">De </span>
                   <span className="text-[15px] font-semibold text-[#999999] line-through">R$ 197</span>
-                  <span className="text-[11px] font-normal text-[#BBBBBB]"> por apenas</span>
                 </div>
                 <div className="flex items-baseline text-primary">
                   <span className="text-[24px] font-bold">R$</span>
