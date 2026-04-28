@@ -147,7 +147,7 @@ export function Pricing() {
 
               {/* Título */}
               <h4 className="text-[20px] font-[800] text-[#1A1A2E] mt-[16px] leading-tight">
-                <span className="text-[#2563EB]">ESPERA!</span> Temos um presente para você
+                <span className="text-[#2563EB]">ESPERA!</span> Temos um presente especial para você
               </h4>
 
               {/* Subtítulo */}
