@@ -190,7 +190,7 @@ export function Pricing() {
               {/* Botão Principal */}
               <Button asChild className="w-full h-auto py-[16px] bg-[#2563EB] hover:bg-[#2563EB]/90 text-white text-[15px] font-[700] rounded-[50px] mt-[20px] shadow-lg transition-all active:scale-95">
                 <a href="#">
-                  Sim! Quero o Kit Completo por R$19,90 →
+                  QUERO O KIT COMPLETO COM DESCONTO!
                 </a>
               </Button>
 
