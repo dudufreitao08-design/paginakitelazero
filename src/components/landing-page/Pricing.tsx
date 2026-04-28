@@ -75,7 +75,7 @@ export function Pricing() {
                   <span className="text-[13px] font-bold text-gray-500">De </span>
                   <span className="text-[15px] font-bold text-gray-500 line-through">R$ 197</span>
                 </div>
-                <div className="flex items-baseline text-primary">
+                <div className="flex items-baseline text-[#2563EB]">
                   <span className="text-[28px] font-bold">R$</span>
                   <span className="text-[68px] font-black leading-none">27,00</span>
                 </div>
@@ -147,7 +147,7 @@ export function Pricing() {
 
               {/* Título */}
               <h4 className="text-[20px] font-[800] text-[#1A1A2E] mt-[16px] leading-tight">
-                Espera! Temos um presente para você
+                <span className="text-[#2563EB]">ESPERA!</span> Temos um presente para você
               </h4>
 
               {/* Subtítulo */}
@@ -159,7 +159,7 @@ export function Pricing() {
               <div className="mt-[12px] flex flex-col items-center">
                 <div className="flex items-center gap-1 text-[13px]">
                   <span className="text-[#999999]">De </span>
-                  <span className="text-red-600 font-semibold line-through">R$27,00</span>
+                  <span className="text-red-600 font-bold line-through">R$27,00</span>
                   <span className="text-[#999999]"> por apenas</span>
                 </div>
                 <div className="text-[48px] font-[900] text-[#2563EB] leading-none mt-1">
