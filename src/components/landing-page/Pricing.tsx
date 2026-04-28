@@ -50,7 +50,7 @@ export function Pricing() {
             </div>
             
             <div className="text-center">
-              <h3 className="text-[26px] font-bold text-[#1A1A2E] mt-[8px] mb-[12px]">Kit Completo</h3>
+              <h3 className="text-[26px] font-bold text-primary mt-[8px] mb-[12px]">Kit Completo</h3>
               <div className="flex flex-col items-center mb-[16px]">
                 <p className="text-[12px] font-normal text-[#999999] mb-[4px]">
                   De <span className="line-through">R$ 197</span> por APENAS:
