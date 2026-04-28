@@ -201,11 +201,6 @@ export function Pricing() {
               >
                 Não, prefiro continuar só com o básico
               </button>
-
-              {/* Texto de Segurança */}
-              <div className="mt-[8px] text-[11px] text-[#BBBBBB] font-medium">
-                🔒 Compra Segura · Acesso Imediato
-              </div>
             </div>
           </div>
         </div>
