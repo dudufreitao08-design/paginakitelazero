@@ -105,7 +105,7 @@ export function Bonuses() {
         <div className="mt-10 flex justify-center">
           <Button asChild className="w-full sm:w-auto h-20 text-xl font-black bg-primary hover:bg-primary/90 rounded-2xl px-12 shadow-[0_8px_0_0_#1d4ed8] active:translate-y-1 active:shadow-none transition-all">
             <a href="#precos">
-              QUERO O KIT + BÔNUS
+              QUERO O KIT + 5 BÔNUS
             </a>
           </Button>
         </div>
