@@ -9,6 +9,8 @@ import { Pricing } from '@/components/landing-page/Pricing';
 import { Guarantee } from '@/components/landing-page/Guarantee';
 import { FAQ } from '@/components/landing-page/FAQ';
 import { Footer } from '@/components/landing-page/Footer';
+import { PurchaseNotification } from '@/components/landing-page/PurchaseNotification';
+import { StickyCTA } from '@/components/landing-page/StickyCTA';
 
 export default function Home() {
   return (
@@ -19,7 +21,7 @@ export default function Home() {
       {/* 2. Hero Section */}
       <Hero />
       
-      {/* 3. Para Quem é Este Material (Substituindo PainSection para maior conversão) */}
+      {/* 3. Para Quem é Este Material */}
       <TargetAudience />
       
       {/* 4. O que você recebe */}
@@ -42,6 +44,10 @@ export default function Home() {
       
       {/* 10. Rodapé */}
       <Footer />
+
+      {/* Widgets flutuantes */}
+      <PurchaseNotification />
+      <StickyCTA />
     </main>
   );
 }
