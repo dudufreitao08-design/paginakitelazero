@@ -49,15 +49,15 @@ export function Pricing() {
               🌟O MAIS ESCOLHIDO
             </div>
             
-            <div className="text-center mb-6">
-              <h3 className="text-2xl sm:text-3xl font-bold text-secondary mb-2">Kit Completo</h3>
-              <div className="flex flex-col items-center">
-                <span className="text-lg font-bold text-primary mb-1">
-                  <span className="line-through opacity-70">De R$ 197</span> por APENAS:
-                </span>
-                <div className="flex items-baseline">
-                  <span className="text-2xl font-bold text-secondary">R$</span>
-                  <span className="text-6xl font-black text-secondary">27,00</span>
+            <div className="text-center">
+              <h3 className="text-[18px] font-bold text-[#1A1A2E] mt-[8px] mb-[12px]">Kit Completo</h3>
+              <div className="flex flex-col items-center mb-[16px]">
+                <p className="text-[12px] font-normal text-[#999999] mb-[4px]">
+                  De <span className="line-through">R$ 197</span> por APENAS:
+                </p>
+                <div className="flex items-baseline text-[#1A1A2E]">
+                  <span className="text-[20px] font-bold">R$</span>
+                  <span className="text-[42px] font-black">27,00</span>
                 </div>
               </div>
             </div>
