@@ -52,10 +52,12 @@ export function Pricing() {
             <div className="text-center">
               <h3 className="text-[26px] font-bold text-primary mt-[8px] mb-[12px]">Kit Completo</h3>
               <div className="flex flex-col items-center mb-[16px]">
-                <p className="text-[12px] font-normal text-[#999999] mb-[4px]">
-                  De <span className="line-through">R$ 197</span> por APENAS:
-                </p>
-                <div className="flex items-baseline text-primary">
+                <div className="mt-[4px] mb-[6px] text-center flex items-center justify-center gap-1">
+                  <span className="text-[13px] font-normal text-[#999999]">De </span>
+                  <span className="text-[15px] font-semibold text-[#999999] line-through">R$ 197</span>
+                  <span className="text-[11px] font-normal text-[#BBBBBB]"> por apenas</span>
+                </div>
+                <div className="flex items-baseline text-[#1A1A2E]">
                   <span className="text-[20px] font-bold">R$</span>
                   <span className="text-[42px] font-black">27,00</span>
                 </div>
