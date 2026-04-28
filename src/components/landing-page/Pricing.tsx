@@ -55,7 +55,7 @@ export function Pricing() {
                 <p className="text-[12px] font-normal text-[#999999] mb-[4px]">
                   De <span className="line-through">R$ 197</span> por APENAS:
                 </p>
-                <div className="flex items-baseline text-[#1A1A2E]">
+                <div className="flex items-baseline text-primary">
                   <span className="text-[20px] font-bold">R$</span>
                   <span className="text-[42px] font-black">27,00</span>
                 </div>
