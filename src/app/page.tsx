@@ -10,7 +10,6 @@ import { Guarantee } from '@/components/landing-page/Guarantee';
 import { FAQ } from '@/components/landing-page/FAQ';
 import { Footer } from '@/components/landing-page/Footer';
 import { PurchaseNotification } from '@/components/landing-page/PurchaseNotification';
-import { StickyCTA } from '@/components/landing-page/StickyCTA';
 
 export default function Home() {
   return (
@@ -47,7 +46,6 @@ export default function Home() {
 
       {/* Widgets flutuantes */}
       <PurchaseNotification />
-      <StickyCTA />
     </main>
   );
 }
