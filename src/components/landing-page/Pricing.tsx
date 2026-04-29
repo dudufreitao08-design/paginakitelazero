@@ -162,7 +162,7 @@ export function Pricing() {
                   <span className="text-red-600 font-bold line-through">R$27,00</span>
                   <span className="text-[#999999]"> por apenas</span>
                 </div>
-                <div className="text-[48px] font-[900] text-[#1A1A2E] leading-none mt-1">
+                <div className="text-[48px] font-[900] text-black leading-none mt-1">
                   R$19,90
                 </div>
               </div>
