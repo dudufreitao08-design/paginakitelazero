@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState } from 'react';
@@ -38,16 +39,16 @@ export function Pricing() {
             </div>
             
             <ul className="space-y-4 mb-8">
-              <li className="flex items-center text-lg font-medium text-secondary">
-                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
+              <li className="flex items-center text-base font-medium text-secondary">
+                <Check className="mr-2 h-5 w-5 text-blue-500 flex-shrink-0" />
                 <span className="whitespace-nowrap">+250 Dinâmicas Interativas</span>
               </li>
-              <li className="flex items-center text-lg font-medium text-secondary">
-                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
+              <li className="flex items-center text-base font-medium text-secondary">
+                <Check className="mr-2 h-5 w-5 text-blue-500 flex-shrink-0" />
                 <span className="whitespace-nowrap">Acesso Imediato</span>
               </li>
-              <li className="flex items-center text-lg font-medium text-secondary">
-                <Check className="mr-2 h-6 w-6 text-blue-500 flex-shrink-0" />
+              <li className="flex items-center text-base font-medium text-secondary">
+                <Check className="mr-2 h-5 w-5 text-blue-500 flex-shrink-0" />
                 <span className="whitespace-nowrap">Garantia de 7 Dias</span>
               </li>
             </ul>
