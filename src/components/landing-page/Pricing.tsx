@@ -30,6 +30,7 @@ export function Pricing() {
           <div className="bg-white p-6 sm:p-8 rounded-3xl border border-gray-200 opacity-80 scale-95 md:order-1">
             <h3 className="text-2xl sm:text-3xl font-bold text-secondary mb-4 text-center">Kit Básico</h3>
             <div className="flex flex-col items-center mb-6">
+              <span className="text-[13px] font-normal text-[#999999] line-through mb-1">De R$47,00</span>
               <div className="flex items-baseline justify-center">
                 <span className="text-2xl font-bold text-secondary">R$</span>
                 <span className="text-5xl font-extrabold text-secondary">10,00</span>
@@ -54,7 +55,7 @@ export function Pricing() {
             <Button 
               variant="outline" 
               onClick={handleBasicClick}
-              className="w-full h-14 rounded-2xl font-bold border-2 cursor-pointer"
+              className="w-full bg-transparent border-2 border-[#2563EB] text-[#2563EB] font-semibold rounded-[50px] py-[14px] h-auto hover:bg-[#2563EB]/5 transition-colors cursor-pointer"
             >
               Comprar Básico
             </Button>
