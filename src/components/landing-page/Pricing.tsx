@@ -1,10 +1,8 @@
-
 "use client";
 
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Check, ShieldCheck } from 'lucide-react';
-import { cn } from '@/lib/utils';
 
 export function Pricing() {
   const [showUpsell, setShowUpsell] = useState(false);
@@ -72,12 +70,12 @@ export function Pricing() {
               <h3 className="text-[26px] font-bold text-primary mt-[8px] mb-[12px]">Kit Completo</h3>
               <div className="flex flex-col items-center mb-[16px]">
                 <div className="mt-[4px] mb-[6px] text-center flex items-center justify-center gap-1">
-                  <span className="text-[13px] font-bold text-[#4B5563]">De </span>
+                  <span className="text-[#4B5563] font-bold">De </span>
                   <span className="text-[15px] font-bold text-[#4B5563] line-through">R$ 197</span>
                 </div>
                 <div className="flex items-baseline text-[#2563EB]">
                   <span className="text-[28px] font-bold">R$</span>
-                  <span className="text-[68px] font-black leading-none">27,00</span>
+                  <span className="text-[78px] font-black leading-none">27,00</span>
                 </div>
               </div>
             </div>

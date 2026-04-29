@@ -23,7 +23,6 @@ export function PurchaseNotification() {
 
   useEffect(() => {
     const showNotification = () => {
-      // Sorteia uma compra aleatória diferente da atual
       setCurrent(prev => {
         let next = Math.floor(Math.random() * purchases.length);
         while (next === prev) {
@@ -34,16 +33,12 @@ export function PurchaseNotification() {
       
       setIsVisible(true);
 
-      // Esconde após 7 segundos
       setTimeout(() => {
         setIsVisible(false);
       }, 7000);
     };
 
-    // Delay inicial para a primeira notificação
     const initialDelay = setTimeout(showNotification, 5000);
-
-    // Intervalo de 25 segundos conforme solicitado
     const interval = setInterval(showNotification, 25000);
 
     return () => {
