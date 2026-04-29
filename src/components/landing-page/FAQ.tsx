@@ -10,7 +10,7 @@ export function FAQ() {
   const faqs = [
     {
       q: "Como vou receber o material?",
-      a: "Imediatamente após a confirmação do pagamento, você receberá um link de acesso por e-mail e via WhatsApp. O material está organizado em pastas dentro do Google Drive para facilitar a navegação."
+      a: "Imediatamente após a confirmação do pagamento, você receberá um link de acesso por e-mail. O material está organizado em pastas dentro do Google Drive para facilitar a navegação."
     },
     {
       q: "Para qual idade o kit é indicado?",
