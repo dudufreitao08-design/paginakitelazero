@@ -1,0 +1,161 @@
+/**
+ * Firestore Security Rules for "Kit Tela Zero" Landing Page.
+ *
+ * Core Philosophy:
+ * This ruleset implements a Public-Read, Authenticated-Write model for prototyping.
+ * The application functions as a marketing landing page where product details, benefits, 
+ * testimonials, and pricing must be accessible to all visitors (including unauthenticated ones) 
+ * to ensure maximum reach and SEO performance. Write operations are restricted to authenticated
+ * users as a first step towards an admin-only model.
+ *
+ * Data Structure:
+ * The data is organized hierarchically starting from the `/products` collection. Every 
+ * marketing component (Benefits, Bonuses, FAQ, etc.) is stored as a subcollection 
+ * under a specific Product document.
+ *
+ * Key Security Decisions:
+ * 1. Public Access: All read operations (get, list) are set to 'if true' to facilitate 
+ *    the landing page's requirement for public visibility.
+ * 2. Authenticated Writes (Prototyping Phase): Write operations are restricted to
+ *    authenticated users. This is a temporary measure. In a production environment, 
+ *    an 'admin' role or specific ownership fields should be added to the Product documents
+ *    and enforced here.
+ * 3. Relational Integrity: The rules enforce that any document created within a 
+ *    product's subcollection must contain a 'productId' field that matches its path,
+ *    and this link cannot be changed during updates.
+ *
+ * Denormalization for Authorization:
+ * Each sub-entity (like a Benefit or a Bonus) includes a denormalized 'productId'. 
+ * This allows security rules to validate the relationship to the parent product 
+ * without performing expensive get() lookups on the parent document.
+ */
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // --- GLOBAL HELPER FUNCTIONS ---
+
+    /**
+     * @description Checks if the user is authenticated.
+     */
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    /**
+     * @description Validates that the internal productId matches the path parameter.
+     * Used during creation to ensure documents are linked correctly.
+     */
+    function isValidProductLink(productId) {
+      return request.resource.data.productId == productId;
+    }
+
+    /**
+     * @description Ensures the productId relationship cannot be changed during an update.
+     */
+    function isProductLinkImmutable() {
+      return request.resource.data.productId == resource.data.productId;
+    }
+
+    // --- COLLECTION RULES ---
+
+    /**
+     * @description Rules for the top-level Product entity.
+     * @path /products/{productId}
+     * @allow (get) Any user can view product details.
+     * @allow (create, update, delete) Only authenticated users can manage products.
+     * @principle Public consumption with restricted administrative modifications.
+     */
+    match /products/{productId} {
+      allow get, list: if true;
+      
+      // Changed from 'if false' to 'if isSignedIn()' for prototyping authenticated writes.
+      // TODO: Refine this to isAdmin() or isOwner() once schema supports it.
+      allow create, update, delete: if isSignedIn(); 
+      
+      /**
+       * @description Benefits or activity categories related to the product.
+       * @path /products/{productId}/benefits/{benefitId}
+       * @allow (create, update, delete) Authenticated users with valid productId mapping.
+       */
+      match /benefits/{benefitId} {
+        allow get, list: if true;
+        // Changed from '&& false' to '&& isSignedIn()'
+        allow create: if isValidProductLink(productId) && isSignedIn(); 
+        allow update: if resource != null && isProductLinkImmutable() && isSignedIn();
+        allow delete: if resource != null && isSignedIn();
+      }
+
+      /**
+       * @description Additional digital products offered as bonuses.
+       * @path /products/{productId}/bonuses/{bonusId}
+       * @allow (list) Any user can see available bonuses.
+       * @allow (create, update, delete) Authenticated users with valid productId mapping.
+       */
+      match /bonuses/{bonusId} {
+        allow get, list: if true;
+        // Changed from '&& false' to '&& isSignedIn()'
+        allow create: if isValidProductLink(productId) && isSignedIn();
+        allow update: if resource != null && isProductLinkImmutable() && isSignedIn();
+        allow delete: if resource != null && isSignedIn();
+      }
+
+      /**
+       * @description Purchasing options and pricing tiers for the product.
+       * @path /products/{productId}/pricingPlans/{planId}
+       * @allow (get) Public access to pricing information.
+       * @allow (create, update, delete) Authenticated users can manage pricing.
+       */
+      match /pricingPlans/{planId} {
+        allow get, list: if true;
+        // Changed from '&& false' to '&& isSignedIn()'
+        allow create: if isValidProductLink(productId) && isSignedIn();
+        allow update: if resource != null && isProductLinkImmutable() && isSignedIn();
+        allow delete: if resource != null && isSignedIn();
+      }
+
+      /**
+       * @description Customer feedback and social proof.
+       * @path /products/{productId}/testimonials/{testimonialId}
+       * @allow (list) Public display of customer reviews.
+       * @allow (create, update, delete) Authenticated users can manage testimonials.
+       */
+      match /testimonials/{testimonialId} {
+        allow get, list: if true;
+        // Changed from '&& false' to '&& isSignedIn()'
+        allow create: if isValidProductLink(productId) && isSignedIn();
+        allow update: if resource != null && isProductLinkImmutable() && isSignedIn();
+        allow delete: if resource != null && isSignedIn();
+      }
+
+      /**
+       * @description Frequently Asked Questions for the product.
+       * @path /products/{productId}/faqs/{faqId}
+       * @allow (get) Public access to FAQ content.
+       * @allow (create, update, delete) Authenticated users can manage FAQs.
+       */
+      match /faqs/{faqId} {
+        allow get, list: if true;
+        // Changed from '&& false' to '&& isSignedIn()'
+        allow create: if isValidProductLink(productId) && isSignedIn();
+        allow update: if resource != null && isProductLinkImmutable() && isSignedIn();
+        allow delete: if resource != null && isSignedIn();
+      }
+
+      /**
+       * @description Pain points addressed by the product.
+       * @path /products/{productId}/painPoints/{painPointId}
+       * @allow (list) Public viewing of target audience struggles.
+       * @allow (create, update, delete) Authenticated users can manage pain points.
+       */
+      match /painPoints/{painPointId} {
+        allow get, list: if true;
+        // Changed from '&& false' to '&& isSignedIn()'
+        allow create: if isValidProductLink(productId) && isSignedIn();
+        allow update: if resource != null && isProductLinkImmutable() && isSignedIn();
+        allow delete: if resource != null && isSignedIn();
+      }
+    }
+  }
+}

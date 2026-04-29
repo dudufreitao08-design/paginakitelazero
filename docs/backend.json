@@ -1,0 +1,508 @@
+{
+  "entities": {
+    "Product": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Product",
+      "type": "object",
+      "description": "Represents the core product 'Kit Tela Zero' and its primary marketing information for the landing page.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the Product entity."
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the product, e.g., 'Kit Tela Zero'."
+        },
+        "tagline": {
+          "type": "string",
+          "description": "A concise slogan or descriptive phrase highlighting the product's main benefit."
+        },
+        "description": {
+          "type": "string",
+          "description": "A detailed description of what the product offers."
+        },
+        "format": {
+          "type": "string",
+          "description": "The delivery format of the product, e.g., 'PDF entregue via Google Drive'."
+        },
+        "targetAudience": {
+          "type": "string",
+          "description": "Description of the primary demographic the product is aimed at."
+        },
+        "coreProblemSummary": {
+          "type": "string",
+          "description": "A summary of the main problem the target audience faces that the product aims to solve."
+        },
+        "differentiator": {
+          "type": "string",
+          "description": "What makes this product unique or stand out from alternatives."
+        },
+        "heroBadgeText": {
+          "type": "string",
+          "description": "The text for the badge displayed above the main headline in the hero section."
+        },
+        "heroHeadline": {
+          "type": "string",
+          "description": "The main, impactful headline for the hero section."
+        },
+        "heroSubheadline": {
+          "type": "string",
+          "description": "The supporting subheadline for the hero section, expanding on the main message."
+        },
+        "callToActionText": {
+          "type": "string",
+          "description": "The primary text for the main Call-to-Action button in the hero section."
+        },
+        "callToActionSubText": {
+          "type": "string",
+          "description": "Additional descriptive text displayed below the hero Call-to-Action button."
+        },
+        "socialProofText": {
+          "type": "string",
+          "description": "Text providing social proof or key assurances below the hero Call-to-Action."
+        },
+        "painPointsBridgeText": {
+          "type": "string",
+          "description": "The connective phrase that transitions from the identified pain points to the product's solution."
+        },
+        "guaranteePeriodDays": {
+          "type": "number",
+          "description": "The number of days for the unconditional money-back guarantee."
+        },
+        "guaranteeTitle": {
+          "type": "string",
+          "description": "The title of the guarantee section."
+        },
+        "guaranteeDescription": {
+          "type": "string",
+          "description": "Detailed explanation of the product's guarantee policy."
+        },
+        "finalCallToActionHeadline": {
+          "type": "string",
+          "description": "The headline for the final Call-to-Action section at the bottom of the page."
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "tagline",
+        "description",
+        "format",
+        "targetAudience",
+        "coreProblemSummary",
+        "differentiator",
+        "heroBadgeText",
+        "heroHeadline",
+        "heroSubheadline",
+        "callToActionText",
+        "callToActionSubText",
+        "socialProofText",
+        "painPointsBridgeText",
+        "guaranteePeriodDays",
+        "guaranteeTitle",
+        "guaranteeDescription",
+        "finalCallToActionHeadline"
+      ]
+    },
+    "ProductBenefit": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "ProductBenefit",
+      "type": "object",
+      "description": "Describes a specific feature or category of activities included in the main 'Kit Tela Zero' product.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the ProductBenefit entity."
+        },
+        "productId": {
+          "type": "string",
+          "description": "Reference to the Product this benefit belongs to. (Relationship: Product 1:N ProductBenefit)"
+        },
+        "iconIdentifier": {
+          "type": "string",
+          "description": "A string identifier (e.g., 'home', 'car', 'street') or emoji for the CSS-only icon representing this benefit."
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the specific benefit or activity category, e.g., 'Atividades Para Casa'."
+        },
+        "description": {
+          "type": "string",
+          "description": "A short description explaining the benefit."
+        },
+        "order": {
+          "type": "number",
+          "description": "The display order of this benefit within the list."
+        }
+      },
+      "required": [
+        "id",
+        "productId",
+        "iconIdentifier",
+        "name",
+        "description",
+        "order"
+      ]
+    },
+    "Bonus": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Bonus",
+      "type": "object",
+      "description": "Represents an additional digital product offered as a bonus with certain pricing plans.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the Bonus entity."
+        },
+        "productId": {
+          "type": "string",
+          "description": "Reference to the main Product this bonus is associated with. (Relationship: Product 1:N Bonus)"
+        },
+        "name": {
+          "type": "string",
+          "description": "The title of the bonus, e.g., '50 Desafios em Família Para Fazer Juntos'."
+        },
+        "description": {
+          "type": "string",
+          "description": "A one-line description of the real benefit of this bonus."
+        },
+        "originalValue": {
+          "type": "number",
+          "description": "The original monetary value of the bonus."
+        }
+      },
+      "required": [
+        "id",
+        "productId",
+        "name",
+        "description",
+        "originalValue"
+      ]
+    },
+    "PricingPlan": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "PricingPlan",
+      "type": "object",
+      "description": "Defines the different purchasing options available for the 'Kit Tela Zero' product.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the PricingPlan entity."
+        },
+        "productId": {
+          "type": "string",
+          "description": "Reference to the Product this pricing plan is for. (Relationship: Product 1:N PricingPlan)"
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the pricing plan, e.g., 'Plano Básico' or 'Plano Premium'."
+        },
+        "price": {
+          "type": "number",
+          "description": "The price of this plan."
+        },
+        "shortDescription": {
+          "type": "string",
+          "description": "A brief summary of what the plan includes."
+        },
+        "isFeatured": {
+          "type": "boolean",
+          "description": "Indicates if this plan should be highlighted as the recommended option."
+        },
+        "displayOriginalTotalValue": {
+          "type": "number",
+          "description": "The combined original value of all items included in the plan, for display purposes (e.g., 'Vale R$197')."
+        },
+        "includesLifetimeAccess": {
+          "type": "boolean",
+          "description": "Indicates if the plan grants lifetime access to the product and bonuses."
+        },
+        "callToActionText": {
+          "type": "string",
+          "description": "The text for the Call-to-Action button specific to this plan."
+        },
+        "callToActionLink": {
+          "type": "string",
+          "description": "The href link for the Call-to-Action button."
+        },
+        "bonusIdsIncluded": {
+          "type": "array",
+          "description": "References to Bonus entities included in this plan. (Relationship: PricingPlan N:N Bonus)",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "productId",
+        "name",
+        "price",
+        "shortDescription",
+        "isFeatured",
+        "includesLifetimeAccess",
+        "callToActionText",
+        "callToActionLink",
+        "bonusIdsIncluded"
+      ]
+    },
+    "Testimonial": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Testimonial",
+      "type": "object",
+      "description": "Customer feedback and reviews for the 'Kit Tela Zero' product.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the Testimonial entity."
+        },
+        "productId": {
+          "type": "string",
+          "description": "Reference to the Product this testimonial is about. (Relationship: Product 1:N Testimonial)"
+        },
+        "authorName": {
+          "type": "string",
+          "description": "The name of the customer giving the testimonial."
+        },
+        "authorDetail": {
+          "type": "string",
+          "description": "Additional details about the author, e.g., 'Cidade, mãe da Sofia (5 anos)'."
+        },
+        "text": {
+          "type": "string",
+          "description": "The actual text of the testimonial."
+        },
+        "rating": {
+          "type": "number",
+          "description": "The star rating given in the testimonial (typically 5 for these use cases)."
+        }
+      },
+      "required": [
+        "id",
+        "productId",
+        "authorName",
+        "authorDetail",
+        "text",
+        "rating"
+      ]
+    },
+    "FAQItem": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "FAQItem",
+      "type": "object",
+      "description": "A frequently asked question and its answer related to the 'Kit Tela Zero' product.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the FAQItem entity."
+        },
+        "productId": {
+          "type": "string",
+          "description": "Reference to the Product this FAQ item is related to. (Relationship: Product 1:N FAQItem)"
+        },
+        "question": {
+          "type": "string",
+          "description": "The frequently asked question."
+        },
+        "answer": {
+          "type": "string",
+          "description": "The answer to the frequently asked question."
+        },
+        "order": {
+          "type": "number",
+          "description": "The display order of this FAQ item."
+        }
+      },
+      "required": [
+        "id",
+        "productId",
+        "question",
+        "answer",
+        "order"
+      ]
+    },
+    "PainPoint": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "PainPoint",
+      "type": "object",
+      "description": "Describes a common problem or struggle experienced by the target audience, addressed by the product.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the PainPoint entity."
+        },
+        "productId": {
+          "type": "string",
+          "description": "Reference to the Product this pain point is related to. (Relationship: Product 1:N PainPoint)"
+        },
+        "emoji": {
+          "type": "string",
+          "description": "An emoji representing the emotion or situation of the pain point."
+        },
+        "text": {
+          "type": "string",
+          "description": "The descriptive text of the pain point."
+        },
+        "order": {
+          "type": "number",
+          "description": "The display order of this pain point."
+        }
+      },
+      "required": [
+        "id",
+        "productId",
+        "emoji",
+        "text",
+        "order"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password",
+      "anonymous"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/products/{productId}",
+        "definition": {
+          "entityName": "Product",
+          "schema": {
+            "$ref": "#/backend/entities/Product"
+          },
+          "description": "The primary product entity 'Kit Tela Zero', holding all top-level marketing and sales information for the landing page. All related content (benefits, bonuses, pricing, etc.) refers back to this product.",
+          "params": [
+            {
+              "name": "productId",
+              "description": "The unique identifier for the Product document (e.g., 'kitTelaZero')."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/products/{productId}/benefits/{benefitId}",
+        "definition": {
+          "entityName": "ProductBenefit",
+          "schema": {
+            "$ref": "#/backend/entities/ProductBenefit"
+          },
+          "description": "Represents a specific benefit or activity category of the product. Includes denormalized 'productId' for authorization independence, though public read access is expected.",
+          "params": [
+            {
+              "name": "productId",
+              "description": "The unique identifier of the parent Product."
+            },
+            {
+              "name": "benefitId",
+              "description": "The unique identifier for the ProductBenefit document."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/products/{productId}/bonuses/{bonusId}",
+        "definition": {
+          "entityName": "Bonus",
+          "schema": {
+            "$ref": "#/backend/entities/Bonus"
+          },
+          "description": "Represents an additional digital product offered as a bonus. Includes denormalized 'productId' for authorization independence, though public read access is expected.",
+          "params": [
+            {
+              "name": "productId",
+              "description": "The unique identifier of the parent Product."
+            },
+            {
+              "name": "bonusId",
+              "description": "The unique identifier for the Bonus document."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/products/{productId}/pricingPlans/{planId}",
+        "definition": {
+          "entityName": "PricingPlan",
+          "schema": {
+            "$ref": "#/backend/entities/PricingPlan"
+          },
+          "description": "Defines a purchasing option for the product. Includes denormalized 'productId' for authorization independence, though public read access is expected. Contains `bonusIdsIncluded` as references to Bonus documents.",
+          "params": [
+            {
+              "name": "productId",
+              "description": "The unique identifier of the parent Product."
+            },
+            {
+              "name": "planId",
+              "description": "The unique identifier for the PricingPlan document."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/products/{productId}/testimonials/{testimonialId}",
+        "definition": {
+          "entityName": "Testimonial",
+          "schema": {
+            "$ref": "#/backend/entities/Testimonial"
+          },
+          "description": "Customer feedback and reviews for the product. Includes denormalized 'productId' for authorization independence, though public read access is expected.",
+          "params": [
+            {
+              "name": "productId",
+              "description": "The unique identifier of the parent Product."
+            },
+            {
+              "name": "testimonialId",
+              "description": "The unique identifier for the Testimonial document."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/products/{productId}/faqs/{faqId}",
+        "definition": {
+          "entityName": "FAQItem",
+          "schema": {
+            "$ref": "#/backend/entities/FAQItem"
+          },
+          "description": "A frequently asked question and its answer related to the product. Includes denormalized 'productId' for authorization independence, though public read access is expected.",
+          "params": [
+            {
+              "name": "productId",
+              "description": "The unique identifier of the parent Product."
+            },
+            {
+              "name": "faqId",
+              "description": "The unique identifier for the FAQItem document."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/products/{productId}/painPoints/{painPointId}",
+        "definition": {
+          "entityName": "PainPoint",
+          "schema": {
+            "$ref": "#/backend/entities/PainPoint"
+          },
+          "description": "Describes a common problem or struggle of the target audience. Includes denormalized 'productId' for authorization independence, though public read access is expected.",
+          "params": [
+            {
+              "name": "productId",
+              "description": "The unique identifier of the parent Product."
+            },
+            {
+              "name": "painPointId",
+              "description": "The unique identifier for the PainPoint document."
+            }
+          ]
+        }
+      }
+    ],
+    "reasoning": "The Firestore structure is designed around a central `Product` entity, representing the 'Kit Tela Zero'. All other entities (`ProductBenefit`, `Bonus`, `PricingPlan`, `Testimonial`, `FAQItem`, `PainPoint`) are organized as subcollections under the specific `Product` document they relate to. This hierarchical structure is chosen to clearly model the 1:N relationships (e.g., a Product has many Benefits).\n\n**Authorization Independence:** All subcollection documents (e.g., `ProductBenefit`, `Bonus`) inherently include a `productId` field as per their schema. This denormalization is crucial for authorization independence. Even though the primary use case for this landing page is public read access (meaning security rules will likely be `allow read: if true;` for all these collections), if in the future specific write access were needed for administrators, rules could directly check `request.auth.uid` against an `ownerId` or `members` map stored within the `Product` or even denormalized to the subdocuments. The `productId` in each subdocument explicitly links it to its parent product without requiring a `get()` operation on the parent `Product` document within security rules, thus maintaining atomic operations and simplifying rule logic.\n\n**Querying and Authorization Posture (QAPs):** The application's core requirement is to display all product-related information on a public landing page. Therefore, all collections (`products`, `benefits`, `bonuses`, `pricingPlans`, `testimonials`, `faqs`, `painPoints`) are designed with a homogeneous security posture: publicly readable. This segregation means that simple `list` operations against these collections (e.g., `/products/{productId}/benefits`) will naturally return only publicly intended data. Firestore security rules can simply `allow read: if true;` on these paths, enabling efficient `list` queries without needing complex filtering logic in the rules themselves, thereby adhering to the Querying as Authorization Posture (QAP) principle. There is no mixing of public and private data within the same collection. For instance, there's no concept of 'draft' benefits alongside 'published' benefits in the same collection; if drafts were introduced, they would go into a segregated collection (e.g., `/users/{uid}/draft_benefits`)."
+  }
+}
