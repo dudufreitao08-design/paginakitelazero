@@ -33,7 +33,9 @@ export function Testimonials() {
   return (
     <section className="py-24 px-6 max-w-7xl mx-auto">
       <div className="text-center mb-16">
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary tracking-tight">O Que os Pais Estão Dizendo</h2>
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary tracking-tight">
+          Quem Confiou, <span className="text-primary">Aprovou!</span>
+        </h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
