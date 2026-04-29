@@ -4,6 +4,7 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Check, ShieldCheck } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 export function Pricing() {
   const [showUpsell, setShowUpsell] = useState(false);
@@ -31,7 +32,7 @@ export function Pricing() {
           <div className="bg-white p-6 sm:p-8 rounded-3xl border border-gray-200 opacity-80 scale-95 md:order-1">
             <h3 className="text-2xl sm:text-3xl font-bold text-secondary mb-4 text-center">Kit Básico</h3>
             <div className="flex flex-col items-center mb-6">
-              <span className="text-[15px] font-normal text-[#999999] line-through mb-1">De R$29,90</span>
+              <span className="text-[15px] font-normal text-[#999999] line-through mb-1">De R$ 29,90</span>
               <div className="flex items-baseline justify-center">
                 <span className="text-2xl font-bold text-secondary">R$</span>
                 <span className="text-5xl font-extrabold text-secondary">10,00</span>
@@ -170,18 +171,23 @@ export function Pricing() {
               {/* Lista de itens */}
               <div className="w-full max-w-[280px] mt-6 text-left">
                 {[
-                  "+250 Dinâmicas Interativas",
-                  "100 Mini Jogos",
-                  "100 Atividades Lúdicas",
-                  "70 Quebra-Cabeças",
-                  "60 Historinhas",
-                  "50 Charadas",
-                  "Acesso vitalício e suporte via WhatsApp"
+                  { text: "+250 Dinâmicas Interativas", highlighted: false },
+                  { text: "Acesso Vitalício", highlighted: false },
+                  { text: "Suporte Personalizado", highlighted: false },
+                  { text: "Atualizações Futuras", highlighted: false },
+                  { text: "Todos os 5 Bônus Inclusos", highlighted: true }
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-2 mb-2">
                     <Check className="h-4 w-4 text-[#2563EB] shrink-0 mt-0.5" strokeWidth={3} />
-                    <span className="text-[13px] font-[500] text-[#1A1A2E] leading-tight">
-                      {item}
+                    <span 
+                      className={cn(
+                        "text-[13px] leading-tight",
+                        item.highlighted 
+                          ? "font-[700] text-[#2563EB]" 
+                          : "font-[500] text-[#1A1A2E]"
+                      )}
+                    >
+                      {item.text}
                     </span>
                   </div>
                 ))}
