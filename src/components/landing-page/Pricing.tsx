@@ -153,14 +153,14 @@ export function Pricing() {
 
               {/* Subtítulo */}
               <p className="text-[14px] text-[#666666] mt-[8px] leading-[1.6]">
-                Antes de finalizar, que tal levar o Kit Completo com todos os bônus por apenas R$7 a mais?
+                Antes de finalizar, que tal levar o Kit Completo com todos os bônus por apenas R$9,90 a mais?
               </p>
 
               {/* Linha de preço */}
               <div className="mt-[12px] flex flex-col items-center">
                 <div className="flex items-center gap-1 text-[13px]">
                   <span className="text-[#999999]">De </span>
-                  <span className="text-red-600 font-bold line-through">R$27,00</span>
+                  <span className="text-red-600 font-bold line-through">R$29,90</span>
                   <span className="text-[#999999]"> por apenas</span>
                 </div>
                 <div className="text-[48px] font-[900] text-black leading-none mt-1">
