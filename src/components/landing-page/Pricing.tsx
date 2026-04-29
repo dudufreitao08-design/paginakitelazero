@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState } from 'react';
@@ -158,7 +157,7 @@ export function Pricing() {
 
               {/* Linha de preço */}
               <div className="mt-[12px] flex flex-col items-center">
-                <div className="flex items-center gap-1 text-[13px]">
+                <div className="flex items-center gap-1 text-[15px]">
                   <span className="text-[#999999]">De </span>
                   <span className="text-red-600 font-bold line-through">R$27,00</span>
                   <span className="text-[#999999]"> por apenas</span>
