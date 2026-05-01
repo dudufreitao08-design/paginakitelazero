@@ -13,7 +13,7 @@ export function HowItWorks() {
       number: 2,
       icon: <Printer className="w-8 h-8 sm:w-10 h-10 text-primary" />,
       title: "Imprima as dinâmicas",
-      description: "Papel sulfite comum já serve. Não precisa de nada especial."
+      description: "Você pode imprimir em casa, na escola ou em uma gráfica. Recomendamos imprimir em papel sulfite A4 para melhor experiência."
     },
     {
       number: 3,
