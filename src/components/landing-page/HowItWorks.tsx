@@ -12,7 +12,7 @@ export function HowItWorks() {
     {
       number: 2,
       icon: <Printer className="w-8 h-8 sm:w-10 h-10 text-primary" />,
-      title: "Escolha uma atividade e imprima.",
+      title: "Imprima as dinâmicas",
       description: "Papel sulfite comum já serve. Não precisa de nada especial."
     },
     {
