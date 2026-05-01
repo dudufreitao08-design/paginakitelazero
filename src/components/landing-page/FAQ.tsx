@@ -21,10 +21,6 @@ export function FAQ() {
       a: "Não! 95% das dinâmicas utilizam apenas coisas que você já tem em casa (papel, caneta, fita, objetos do cotidiano) ou apenas a imaginação e a interação direta."
     },
     {
-      q: "É uma assinatura mensal?",
-      a: "Não. O pagamento é único e você terá acesso ao material para sempre (acesso vitalício garantido no Plano Premium)."
-    },
-    {
       q: "E se meu filho não se interessar pelas atividades?",
       a: "O kit foi testado com mais de 4.000 crianças. Como são +250 opções diferentes de diversos estilos, é impossível não encontrar várias que ele vai amar. Mas se ainda assim não servir, você tem 7 dias de garantia total."
     },
