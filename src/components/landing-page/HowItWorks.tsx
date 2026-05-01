@@ -19,7 +19,7 @@ export function HowItWorks() {
       number: 3,
       icon: <Pencil className="w-8 h-8 sm:w-10 h-10 text-primary" />,
       title: "Comece a praticar",
-      description: "Sem preparação, sem enrolação. A atividade já vem pronta — é só brincar."
+      description: "Escolha uma atividade e comece hoje mesmo. Em poucos minutos, seu filho já estará envolvido."
     }
   ];
 
