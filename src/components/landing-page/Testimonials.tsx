@@ -41,7 +41,7 @@ export function Testimonials() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {reviews.map((review, index) => (
           <div key={index} className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm flex flex-col h-full">
-            <div className="flex text-yellow-400 mb-4">
+            <div className="flex text-white mb-4">
               {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
             </div>
             <p className="text-secondary italic mb-8 flex-grow leading-relaxed">"{review.text}"</p>
