@@ -10,7 +10,8 @@ export function Testimonials() {
       child: "Mãe de menina de 5 anos",
       text: "Minha filha ficou 1 hora sem pedir o celular. 1 hora!! Eu fiquei olhando sem acreditar kkkkk. Vale muito!",
       initials: "CR",
-      image: "https://i.imgur.com/tOA8HoU.jpeg"
+      image: "https://i.imgur.com/tOA8HoU.jpeg",
+      rating: 5
     },
     {
       name: "Rafael Oliveira",
@@ -18,7 +19,8 @@ export function Testimonials() {
       child: "Pai de duas meninas",
       text: "Fui eu quem comprou e hoje toda a família usa. O Kit Tela Zero realmente mudou nossa rotina com nossas filhas. Recomendo demais.",
       initials: "RO",
-      image: "https://i.imgur.com/gYGEUVo.jpeg"
+      image: "https://i.imgur.com/gYGEUVo.jpeg",
+      rating: 4
     },
     {
       name: "Juliana Mendes",
@@ -26,7 +28,8 @@ export function Testimonials() {
       child: "Mãe de menino de 8 anos",
       text: "Já tentei de tudo e nada funcionava. No mesmo dia que recebi, eu e meu filho usamos e tivemos um momento único.",
       initials: "JM",
-      image: "https://i.imgur.com/os855un.jpeg"
+      image: "https://i.imgur.com/os855un.jpeg",
+      rating: 5
     }
   ];
 
@@ -41,8 +44,13 @@ export function Testimonials() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {reviews.map((review, index) => (
           <div key={index} className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm flex flex-col h-full">
-            <div className="flex text-white mb-4">
-              {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
+            <div className="flex mb-4 gap-0.5">
+              {[...Array(5)].map((_, i) => (
+                <Star 
+                  key={i} 
+                  className={`h-4 w-4 ${i < review.rating ? 'fill-yellow-400 text-yellow-400' : 'text-gray-300'}`} 
+                />
+              ))}
             </div>
             <p className="text-secondary italic mb-8 flex-grow leading-relaxed">"{review.text}"</p>
             <div className="flex items-center space-x-4">
