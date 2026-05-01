@@ -20,15 +20,15 @@ export default function Home() {
       
       {/* 2. Hero Section */}
       <Hero />
+
+      {/* 3. Como funciona */}
+      <HowItWorks />
       
-      {/* 3. Para Quem é Este Material */}
+      {/* 4. Para Quem é Este Material */}
       <TargetAudience />
       
-      {/* 4. O que você recebe */}
+      {/* 5. O que você recebe */}
       <Benefits />
-
-      {/* 5. Como funciona */}
-      <HowItWorks />
       
       {/* 6. Seção de bônus */}
       <Bonuses />
