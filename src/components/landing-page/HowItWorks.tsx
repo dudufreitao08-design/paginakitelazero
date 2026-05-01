@@ -6,7 +6,7 @@ export function HowItWorks() {
     {
       number: 1,
       icon: <Mail className="w-8 h-8 sm:w-10 h-10 text-primary" />,
-      title: "Comprou? Acesso imediato.",
+      title: "Faça o download",
       description: "Após a confirmação do pagamento, você receberá um e-mail com o link de acesso para fazer o download de todos os materiais."
     },
     {
