@@ -27,7 +27,7 @@ export function HowItWorks() {
     <section className="py-12 sm:py-16 px-6 bg-white">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-10 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#1a1a2e] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1a2e] tracking-tight">
             Como <span className="text-primary">funciona?</span>
           </h2>
         </div>
