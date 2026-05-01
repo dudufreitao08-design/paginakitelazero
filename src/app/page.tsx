@@ -3,6 +3,7 @@ import { TopBar } from '@/components/landing-page/TopBar';
 import { Hero } from '@/components/landing-page/Hero';
 import { TargetAudience } from '@/components/landing-page/TargetAudience';
 import { Benefits } from '@/components/landing-page/Benefits';
+import { HowItWorks } from '@/components/landing-page/HowItWorks';
 import { Bonuses } from '@/components/landing-page/Bonuses';
 import { Testimonials } from '@/components/landing-page/Testimonials';
 import { Pricing } from '@/components/landing-page/Pricing';
@@ -25,23 +26,26 @@ export default function Home() {
       
       {/* 4. O que você recebe */}
       <Benefits />
+
+      {/* 5. Como funciona */}
+      <HowItWorks />
       
-      {/* 5. Seção de bônus */}
+      {/* 6. Seção de bônus */}
       <Bonuses />
       
-      {/* 6. Seção de depoimentos */}
+      {/* 7. Seção de depoimentos */}
       <Testimonials />
       
-      {/* 7. Seção de preços */}
+      {/* 8. Seção de preços */}
       <Pricing />
       
-      {/* 8. Seção de garantia */}
+      {/* 9. Seção de garantia */}
       <Guarantee />
       
-      {/* 9. Seção de FAQ */}
+      {/* 10. Seção de FAQ */}
       <FAQ />
       
-      {/* 10. Rodapé */}
+      {/* 11. Rodapé */}
       <Footer />
 
       {/* Widgets flutuantes */}
