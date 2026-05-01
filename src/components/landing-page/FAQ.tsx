@@ -23,10 +23,6 @@ export function FAQ() {
     {
       q: "E se meu filho não se interessar pelas atividades?",
       a: "O kit foi testado com mais de 4.000 crianças. Como são +250 opções diferentes de diversos estilos, é impossível não encontrar várias que ele vai amar. Mas se ainda assim não servir, você tem 7 dias de garantia total."
-    },
-    {
-      q: "Qual a diferença real entre os planos?",
-      a: "O Plano Básico entrega o kit principal com as 250 dinâmicas. O Plano Premium adiciona os 5 bônus (que valem mais de R$ 190 se comprados separadamente), além de garantir acesso vitalício e suporte prioritário."
     }
   ];
 
