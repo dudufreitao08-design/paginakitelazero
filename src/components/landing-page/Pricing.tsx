@@ -58,7 +58,7 @@ export function Pricing() {
               onClick={handleBasicClick}
               className="w-full bg-transparent border-2 border-[#2563EB] text-[#2563EB] font-semibold rounded-[50px] py-[14px] h-auto hover:bg-[#2563EB]/5 transition-colors cursor-pointer"
             >
-              Comprar Básico
+              Quero O Kit Básico
             </Button>
           </div>
 
