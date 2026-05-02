@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState } from 'react';
@@ -201,7 +202,7 @@ export function Pricing() {
 
               {/* Botão Secundário */}
               <button 
-                onClick={closeUpsell}
+                onClick={() => window.location.href = 'https://ggcheckout.app/checkout/v5/PUEAyZ7aAabjIRP9MEyE'}
                 className="w-full bg-transparent border-none text-[12px] text-[#999999] mt-[10px] cursor-pointer hover:text-[#666666] transition-colors font-medium"
               >
                 Não, prefiro continuar só com o básico
