@@ -121,7 +121,7 @@ export function Pricing() {
               </li>
             </ul>
             
-            <Button asChild className="w-full h-20 text-xl font-black bg-primary hover:bg-primary/90 rounded-2xl shadow-[0_6px_0_0_#1d4ed8] active:translate-y-1 active:shadow-none transition-all">
+            <Button asChild className="w-full h-20 text-xl font-black bg-primary hover:bg-primary/90 rounded-2xl shadow-[0_6px_0_0_#1d4ed8] active:translate-y-1 active:shadow-none transition-all animate-pulse-cta">
               <a href="https://ggcheckout.app/checkout/v5/PEUQyw4I1IbHyOsA71mP">QUERO O KIT COMPLETO</a>
             </Button>
             
@@ -193,7 +193,7 @@ export function Pricing() {
               </div>
 
               {/* Botão Principal */}
-              <Button asChild className="w-full h-auto py-[16px] bg-[#2563EB] hover:bg-[#2563EB]/90 text-white text-[15px] font-[700] rounded-[50px] mt-[20px] shadow-lg transition-all active:scale-95">
+              <Button asChild className="w-full h-auto py-[16px] bg-[#2563EB] hover:bg-[#2563EB]/90 text-white text-[15px] font-[700] rounded-[50px] mt-[20px] shadow-lg transition-all active:scale-95 animate-pulse-cta">
                 <a href="https://ggcheckout.app/checkout/v5/NcGXQLf9bKtQDPphWS9r">
                   QUERO O KIT COMPLETO POR 19,90
                 </a>

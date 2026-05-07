@@ -59,6 +59,16 @@
   }
 }
 
+@keyframes pulse-cta {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.animate-pulse-cta {
+  animation: pulse-cta 2s ease-in-out infinite;
+}
+
 .kit-card-stack {
   perspective: 1000px;
 }

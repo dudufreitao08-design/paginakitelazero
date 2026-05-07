@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -36,7 +35,7 @@ export function Hero() {
         </div>
 
         <div className="flex flex-col items-center space-y-4 w-full px-4">
-          <Button asChild size="lg" className="w-full sm:w-auto h-16 sm:h-20 text-xl sm:text-2xl font-black bg-primary hover:bg-primary/90 rounded-2xl px-12 shadow-[0_8px_0_0_#1d4ed8] active:translate-y-1 active:shadow-none transition-all">
+          <Button asChild size="lg" className="w-full sm:w-auto h-16 sm:h-20 text-xl sm:text-2xl font-black bg-primary hover:bg-primary/90 rounded-2xl px-12 shadow-[0_8px_0_0_#1d4ed8] active:translate-y-1 active:shadow-none transition-all animate-pulse-cta">
             <a href="#precos">
               QUERO O KIT AGORA
             </a>
