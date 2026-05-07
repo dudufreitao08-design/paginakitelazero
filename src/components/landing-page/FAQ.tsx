@@ -14,7 +14,7 @@ export function FAQ() {
     },
     {
       q: "Para qual idade o kit é indicado?",
-      a: "Temos atividades focadas para crianças de 2 a 10 anos. No Plano Premium, você recebe inclusive um bônus especial que separa as atividades exatamente por faixa etária."
+      a: "O kit foi desenvolvido para crianças de 2 a 10 anos. As atividades variam em nível de dificuldade, então você encontra opções tanto para os menores que estão começando a explorar quanto para as crianças maiores que precisam de mais desafio."
     },
     {
       q: "Preciso de materiais caros ou especiais?",
