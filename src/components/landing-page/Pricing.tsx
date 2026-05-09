@@ -5,16 +5,32 @@ import { Button } from '@/components/ui/button';
 import { Check, ShieldCheck } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
+declare global {
+  interface Window {
+    fbq: any;
+  }
+}
+
 export function Pricing() {
   const [showUpsell, setShowUpsell] = useState(false);
 
+  const trackInitiateCheckout = (value: number) => {
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'InitiateCheckout', {
+        value: value,
+        currency: 'BRL'
+      });
+    }
+  };
+
   const handleBasicClick = (e: React.MouseEvent) => {
     e.preventDefault();
+    trackInitiateCheckout(10.00);
     setShowUpsell(true);
   };
 
-  const closeUpsell = () => {
-    setShowUpsell(false);
+  const handlePremiumClick = () => {
+    trackInitiateCheckout(27.00);
   };
 
   return (
@@ -122,7 +138,7 @@ export function Pricing() {
             </ul>
             
             <Button asChild className="w-full h-20 text-xl font-black bg-primary hover:bg-primary/90 rounded-2xl shadow-[0_6px_0_0_#1d4ed8] active:translate-y-1 active:shadow-none transition-all animate-pulse-cta">
-              <a href="https://ggcheckout.app/checkout/v5/PEUQyw4I1IbHyOsA71mP">QUERO O KIT COMPLETO</a>
+              <a href="https://ggcheckout.app/checkout/v5/PEUQyw4I1IbHyOsA71mP" onClick={handlePremiumClick}>QUERO O KIT COMPLETO</a>
             </Button>
             
             <div className="mt-6 flex items-center justify-center text-xs font-bold text-muted-foreground">
@@ -194,14 +210,17 @@ export function Pricing() {
 
               {/* Botão Principal */}
               <Button asChild className="w-full h-auto py-[16px] bg-[#2563EB] hover:bg-[#2563EB]/90 text-white text-[15px] font-[700] rounded-[50px] mt-[20px] shadow-lg transition-all active:scale-95 animate-pulse-cta">
-                <a href="https://ggcheckout.app/checkout/v5/NcGXQLf9bKtQDPphWS9r">
+                <a href="https://ggcheckout.app/checkout/v5/NcGXQLf9bKtQDPphWS9r" onClick={() => trackInitiateCheckout(19.90)}>
                   QUERO O KIT COMPLETO POR 19,90
                 </a>
               </Button>
 
               {/* Botão Secundário */}
               <button 
-                onClick={() => window.location.href = 'https://ggcheckout.app/checkout/v5/PUEAyZ7aAabjIRP9MEyE'}
+                onClick={() => {
+                  trackInitiateCheckout(10.00);
+                  window.location.href = 'https://ggcheckout.app/checkout/v5/PUEAyZ7aAabjIRP9MEyE';
+                }}
                 className="w-full bg-transparent border-none text-[12px] text-[#999999] mt-[10px] cursor-pointer hover:text-[#666666] transition-colors font-medium"
               >
                 Não, prefiro continuar só com o básico
