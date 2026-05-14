@@ -220,7 +220,7 @@ export function Pricing() {
               <button 
                 onClick={() => {
                   trackInitiateCheckout(10.00);
-                  window.location.href = 'https://ggcheckout.app/checkout/v5/PUEAyZ7aAabjIRP9MEyE';
+                  window.location.href = 'https://pay.wiapy.com/yWsnRMZpL8?payment_method=pix';
                 }}
                 className="w-full bg-transparent border-none text-[12px] text-[#999999] mt-[10px] cursor-pointer hover:text-[#666666] transition-colors font-medium"
               >
