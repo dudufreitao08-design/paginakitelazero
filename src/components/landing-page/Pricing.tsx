@@ -211,7 +211,7 @@ export function Pricing() {
 
               {/* Botão Principal */}
               <Button asChild className="w-full h-auto py-[16px] bg-[#2563EB] hover:bg-[#2563EB]/90 text-white text-[15px] font-[700] rounded-[50px] mt-[20px] shadow-lg transition-all active:scale-95 animate-pulse-cta">
-                <a href="https://ggcheckout.app/checkout/v5/NcGXQLf9bKtQDPphWS9r" onClick={() => trackInitiateCheckout(19.90)}>
+                <a href="https://pay.wiapy.com/gCt1O572G5?payment_method=pix" onClick={() => trackInitiateCheckout(19.90)}>
                   QUERO O KIT COMPLETO POR 19,90
                 </a>
               </Button>
