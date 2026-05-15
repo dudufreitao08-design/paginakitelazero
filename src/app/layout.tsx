@@ -1,12 +1,10 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { FirebaseClientProvider } from '@/firebase/client-provider';
-
 export const metadata: Metadata = {
   title: 'Kit Tela Zero - +250 Dinâmicas Interativas',
   description: 'Tire seu filho da tela hoje mesmo com atividades práticas para casa, carro e rua.',
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -41,7 +39,6 @@ export default function RootLayout({
           />
         </noscript>
         {/* End Meta Pixel Code */}
-
         {/* UTMify */}
         <script
           dangerouslySetInnerHTML={{
@@ -56,7 +53,41 @@ export default function RootLayout({
           }}
         />
         {/* End UTMify */}
-
+        {/* Script UTM — repassa parâmetros para o checkout */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                function getUTMParams() {
+                  var params = new URLSearchParams(window.location.search);
+                  var utms = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','sck'];
+                  var result = [];
+                  utms.forEach(function(key) {
+                    var val = params.get(key);
+                    if (val) result.push(key + '=' + encodeURIComponent(val));
+                  });
+                  return result.join('&');
+                }
+                function updateCheckoutLinks() {
+                  var utmString = getUTMParams();
+                  if (!utmString) return;
+                  var links = document.querySelectorAll('a[href*="wiapy.com"], a[href*="checkout"]');
+                  links.forEach(function(link) {
+                    var url = link.getAttribute('href');
+                    var separator = url.indexOf('?') !== -1 ? '&' : '?';
+                    link.setAttribute('href', url + separator + utmString);
+                  });
+                }
+                if (document.readyState === 'loading') {
+                  document.addEventListener('DOMContentLoaded', updateCheckoutLinks);
+                } else {
+                  updateCheckoutLinks();
+                }
+              })();
+            `,
+          }}
+        />
+        {/* End Script UTM */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
