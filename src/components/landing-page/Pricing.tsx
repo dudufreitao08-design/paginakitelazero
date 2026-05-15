@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState } from 'react';
@@ -14,6 +13,35 @@ declare global {
 
 export function Pricing() {
   const [showUpsell, setShowUpsell] = useState(false);
+
+  const getCheckoutUrl = (baseUrl: string) => {
+    const checkoutUrl = new URL(baseUrl);
+
+    checkoutUrl.searchParams.set('payment_method', 'pix');
+
+    if (typeof window !== 'undefined') {
+      const currentParams = new URLSearchParams(window.location.search);
+
+      const paramsToForward = [
+        'utm_source',
+        'utm_medium',
+        'utm_campaign',
+        'utm_content',
+        'utm_term',
+        'fbclid'
+      ];
+
+      paramsToForward.forEach((param) => {
+        const value = currentParams.get(param);
+
+        if (value) {
+          checkoutUrl.searchParams.set(param, value);
+        }
+      });
+    }
+
+    return checkoutUrl.toString();
+  };
 
   const trackInitiateCheckout = (value: number) => {
     if (typeof window !== 'undefined' && window.fbq) {
@@ -31,7 +59,7 @@ export function Pricing() {
   };
 
   const handlePremiumClick = () => {
-    trackInitiateCheckout(27.00);
+    trackInitiateCheckout(27.90);
   };
 
   return (
@@ -54,7 +82,7 @@ export function Pricing() {
                 <span className="text-5xl font-extrabold text-secondary">10,00</span>
               </div>
             </div>
-            
+
             <ul className="space-y-4 mb-8">
               <li className="flex items-center text-base font-medium text-secondary">
                 <Check className="mr-2 h-5 w-5 text-blue-500 flex-shrink-0" />
@@ -69,9 +97,9 @@ export function Pricing() {
                 <span className="whitespace-nowrap">Garantia de 7 Dias</span>
               </li>
             </ul>
-            
-            <Button 
-              variant="outline" 
+
+            <Button
+              variant="outline"
               onClick={handleBasicClick}
               className="w-full bg-transparent border-2 border-[#2563EB] text-[#2563EB] font-semibold rounded-[50px] py-[14px] h-auto hover:bg-[#2563EB]/5 transition-colors cursor-pointer"
             >
@@ -84,7 +112,7 @@ export function Pricing() {
             <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-white px-6 py-2 rounded-full text-sm font-black uppercase tracking-widest shadow-lg whitespace-nowrap">
               🌟O MAIS ESCOLHIDO
             </div>
-            
+
             <div className="text-center">
               <h3 className="text-[26px] font-bold text-primary mt-[8px] mb-[12px]">Kit Completo</h3>
               <div className="flex flex-col items-center mb-[16px]">
@@ -98,7 +126,7 @@ export function Pricing() {
                 </div>
               </div>
             </div>
-            
+
             <ul className="mb-10 pl-4 pr-6">
               <li className="flex items-center font-medium text-[#1A1A2E] text-[15px] mb-[12px]">
                 <Check className="mr-2 h-[18px] w-[18px] text-[#2563EB] flex-shrink-0" />
@@ -137,11 +165,13 @@ export function Pricing() {
                 <span className="leading-tight">50 Charadas</span>
               </li>
             </ul>
-            
+
             <Button asChild className="w-full h-20 text-xl font-black bg-primary hover:bg-primary/90 rounded-2xl shadow-[0_6px_0_0_#1d4ed8] active:translate-y-1 active:shadow-none transition-all animate-pulse-cta">
-              <a href="https://pay.wiapy.com/fkWpYjVyyS?payment_method=pix" onClick={handlePremiumClick}>QUERO O KIT COMPLETO</a>
+              <a href={getCheckoutUrl("https://pay.wiapy.com/fkWpYjVyyS")} onClick={handlePremiumClick}>
+                QUERO O KIT COMPLETO
+              </a>
             </Button>
-            
+
             <div className="mt-6 flex items-center justify-center text-xs font-bold text-muted-foreground">
               <ShieldCheck className="mr-1 h-4 w-4" />
               Compra Segura · Acesso Instantâneo
@@ -154,7 +184,7 @@ export function Pricing() {
       {showUpsell && (
         <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
           <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
-          
+
           <div className="relative bg-white w-full max-w-[380px] rounded-[16px] p-[28px_24px] shadow-2xl animate-in fade-in slide-in-from-bottom-8 duration-300">
             <div className="flex flex-col items-center text-center">
               {/* Badge */}
@@ -195,11 +225,11 @@ export function Pricing() {
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-2 mb-2">
                     <Check className="h-4 w-4 text-[#2563EB] shrink-0 mt-0.5" strokeWidth={3} />
-                    <span 
+                    <span
                       className={cn(
                         "text-[13px] leading-tight",
-                        item.highlighted 
-                          ? "font-[700] text-[#2563EB]" 
+                        item.highlighted
+                          ? "font-[700] text-[#2563EB]"
                           : "font-[500] text-[#1A1A2E]"
                       )}
                     >
@@ -211,16 +241,16 @@ export function Pricing() {
 
               {/* Botão Principal */}
               <Button asChild className="w-full h-auto py-[16px] bg-[#2563EB] hover:bg-[#2563EB]/90 text-white text-[15px] font-[700] rounded-[50px] mt-[20px] shadow-lg transition-all active:scale-95 animate-pulse-cta">
-                <a href="https://pay.wiapy.com/gCt1O572G5?payment_method=pix" onClick={() => trackInitiateCheckout(19.90)}>
+                <a href={getCheckoutUrl("https://pay.wiapy.com/gCt1O572G5")} onClick={() => trackInitiateCheckout(19.90)}>
                   QUERO O KIT COMPLETO POR 19,90
                 </a>
               </Button>
 
               {/* Botão Secundário */}
-              <button 
+              <button
                 onClick={() => {
                   trackInitiateCheckout(10.00);
-                  window.location.href = 'https://pay.wiapy.com/yWsnRMZpL8?payment_method=pix';
+                  window.location.href = getCheckoutUrl("https://pay.wiapy.com/yWsnRMZpL8");
                 }}
                 className="w-full bg-transparent border-none text-[12px] text-[#999999] mt-[10px] cursor-pointer hover:text-[#666666] transition-colors font-medium"
               >
