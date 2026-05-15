@@ -1,11 +1,29 @@
+
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { CheckCircle2 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
+declare global {
+  interface Window {
+    fbq: any;
+  }
+}
+
 export function Hero() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-product');
+
+  const handleCTAClick = () => {
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'InitiateCheckout', {
+        value: 10.00,
+        currency: 'BRL'
+      });
+    }
+  };
 
   return (
     <section className="relative overflow-hidden pt-12 pb-16 px-6 max-w-7xl mx-auto">
@@ -36,7 +54,7 @@ export function Hero() {
 
         <div className="flex flex-col items-center space-y-4 w-full px-4">
           <Button asChild size="lg" className="w-full sm:w-auto h-16 sm:h-20 text-xl sm:text-2xl font-black bg-primary hover:bg-primary/90 rounded-2xl px-12 shadow-[0_8px_0_0_#1d4ed8] active:translate-y-1 active:shadow-none transition-all animate-pulse-cta">
-            <a href="#precos">
+            <a href="https://pay.wiapy.com/yWsnRMZpL8?payment_method=pix" onClick={handleCTAClick}>
               QUERO O KIT AGORA
             </a>
           </Button>
