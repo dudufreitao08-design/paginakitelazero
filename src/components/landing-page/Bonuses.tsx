@@ -5,12 +5,6 @@ import React from 'react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 
-declare global {
-  interface Window {
-    fbq: any;
-  }
-}
-
 export function Bonuses() {
   const bonuses = [
     {
@@ -44,15 +38,6 @@ export function Bonuses() {
       imageId: "extra-5"
     }
   ];
-
-  const handleCTAClick = () => {
-    if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'InitiateCheckout', {
-        value: 10.00,
-        currency: 'BRL'
-      });
-    }
-  };
 
   return (
     <section className="bg-gray-50 py-24 px-6">
@@ -122,7 +107,7 @@ export function Bonuses() {
         {/* Botão CTA da seção de bônus */}
         <div className="mt-10 flex justify-center">
           <Button asChild className="w-full sm:w-auto h-20 text-xl font-black bg-primary hover:bg-primary/90 rounded-2xl px-12 shadow-[0_8px_0_0_#1d4ed8] active:translate-y-1 active:shadow-none transition-all animate-pulse-cta">
-            <a href="https://pay.wiapy.com/yWsnRMZpL8?payment_method=pix" onClick={handleCTAClick}>
+            <a href="#precos">
               QUERO O KIT + 5 BÔNUS
             </a>
           </Button>
