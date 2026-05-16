@@ -115,9 +115,8 @@ export function Pricing() {
             </ul>
 
             <Button
-              variant="outline"
               onClick={handleBasicClick}
-              className="w-full bg-transparent border-2 border-[#2563EB] text-[#2563EB] font-semibold rounded-[50px] py-[14px] h-auto hover:bg-[#2563EB]/5 transition-colors cursor-pointer"
+              className="w-full bg-[#2563EB] hover:bg-[#2563EB]/90 text-white font-bold rounded-[50px] py-[14px] h-auto shadow-md transition-all active:scale-95 cursor-pointer"
             >
               Quero o Kit Básico
             </Button>
@@ -147,7 +146,7 @@ export function Pricing() {
               <div className="flex flex-col items-center mb-[16px]">
                 <div className="mt-[4px] mb-[6px] text-center flex items-center justify-center gap-1">
                   <span className="text-[#4B5563] font-bold">De </span>
-                  <span className="text-[15px] font-bold text-[#4B5563] line-through">R$ 27,90</span>
+                  <span className="text-[15px] font-bold text-[#4B5563] line-through">R$ 197</span>
                 </div>
                 <div className="flex items-baseline text-[#2563EB]">
                   <span className="text-[28px] font-bold">R$</span>
