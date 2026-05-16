@@ -56,10 +56,52 @@
       "imageHint": "complete kit"
     },
     {
+      "id": "extra-1",
+      "description": "Bônus: Detetive em Família",
+      "imageUrl": "https://i.imgur.com/SBqiLo6.jpeg",
+      "imageHint": "detective game"
+    },
+    {
+      "id": "extra-2",
+      "description": "Bônus: Guia Tirar Celular",
+      "imageUrl": "https://i.imgur.com/L2pBdVL.jpeg",
+      "imageHint": "parenting guide"
+    },
+    {
+      "id": "extra-3",
+      "description": "Bônus: 30 Moldes",
+      "imageUrl": "https://i.imgur.com/RCSgEeL.jpeg",
+      "imageHint": "printable crafts"
+    },
+    {
+      "id": "extra-4",
+      "description": "Bônus: Planner Semanal",
+      "imageUrl": "https://i.imgur.com/pb7733J.jpeg",
+      "imageHint": "weekly planner"
+    },
+    {
+      "id": "extra-5",
+      "description": "Bônus: Do Caos à Calma",
+      "imageUrl": "https://i.imgur.com/9vv5nHW.jpeg",
+      "imageHint": "emotional techniques"
+    },
+    {
       "id": "guarantee-seal",
       "description": "Selo de Garantia 7 Dias",
       "imageUrl": "https://i.imgur.com/BNMN6u8.png",
       "imageHint": "guarantee seal"
+    },
+    {
+      "id": "pricing-basico",
+      "description": "Mockup Kit Básico",
+      "imageUrl": "https://i.imgur.com/MbitFvB.png",
+      "imageHint": "product kit"
+    },
+    {
+      "id": "pricing-completo",
+      "description": "Mockup Kit Completo",
+      "imageUrl": "https://i.imgur.com/ajzmJE6.jpeg",
+      "imageHint": "full product"
     }
   ]
 }

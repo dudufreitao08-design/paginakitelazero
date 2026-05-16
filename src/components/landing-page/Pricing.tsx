@@ -1,9 +1,12 @@
+
 "use client";
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Check, ShieldCheck } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 declare global {
   interface Window {
@@ -14,14 +17,15 @@ declare global {
 export function Pricing() {
   const [showUpsell, setShowUpsell] = useState(false);
 
+  const basicMockup = PlaceHolderImages.find(img => img.id === 'pricing-basico');
+  const completoMockup = PlaceHolderImages.find(img => img.id === 'pricing-completo');
+
   const getCheckoutUrl = (baseUrl: string) => {
     const checkoutUrl = new URL(baseUrl);
-
     checkoutUrl.searchParams.set('payment_method', 'pix');
 
     if (typeof window !== 'undefined') {
       const currentParams = new URLSearchParams(window.location.search);
-
       const paramsToForward = [
         'utm_source',
         'utm_medium',
@@ -33,13 +37,11 @@ export function Pricing() {
 
       paramsToForward.forEach((param) => {
         const value = currentParams.get(param);
-
         if (value) {
           checkoutUrl.searchParams.set(param, value);
         }
       });
     }
-
     return checkoutUrl.toString();
   };
 
@@ -71,10 +73,25 @@ export function Pricing() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           {/* Kit Básico */}
-          <div className="bg-white p-6 sm:p-8 rounded-3xl border border-gray-200 opacity-80 scale-95 md:order-1">
+          <div className="bg-white p-6 sm:p-8 rounded-3xl border border-gray-200 opacity-80 scale-95 md:order-1 flex flex-col items-center">
+            {basicMockup && (
+              <div className="mb-4 flex flex-col items-center">
+                <Image 
+                  src={basicMockup.imageUrl}
+                  alt={basicMockup.description}
+                  width={240}
+                  height={180}
+                  className="max-h-[180px] w-auto object-contain"
+                  data-ai-hint={basicMockup.imageHint}
+                />
+                <p className="text-[12px] text-muted-foreground/70 mt-2 font-medium">Ideal para começar hoje</p>
+              </div>
+            )}
+            
             <h3 className="text-2xl sm:text-3xl font-bold text-secondary mb-4 text-center">Kit Básico</h3>
+            
             <div className="flex flex-col items-center mb-6">
               <span className="text-[15px] font-normal text-[#999999] line-through mb-1">De R$ 29,90</span>
               <div className="flex items-baseline justify-center">
@@ -83,7 +100,7 @@ export function Pricing() {
               </div>
             </div>
 
-            <ul className="space-y-4 mb-8">
+            <ul className="space-y-4 mb-8 w-full">
               <li className="flex items-center text-base font-medium text-secondary">
                 <Check className="mr-2 h-5 w-5 text-blue-500 flex-shrink-0" />
                 <span className="whitespace-nowrap">+250 Dinâmicas Interativas</span>
@@ -101,20 +118,33 @@ export function Pricing() {
             <Button
               variant="outline"
               onClick={handleBasicClick}
-              className="w-full bg-transparent border-2 border-[#2563EB] text-[#2563EB] font-semibold rounded-[50px] py-[14px] h-auto hover:bg-[#2563EB]/5 transition-colors cursor-pointer"
+              className="w-full bg-transparent border-2 border-[#2563EB] text-[#2563EB] font-semibold rounded-[50px] py-[14px] h-auto hover:bg-[#2563EB]/5 transition-colors cursor-pointer animate-pulse-cta"
             >
               Quero o Kit Básico
             </Button>
           </div>
 
           {/* Kit Completo */}
-          <div className="relative bg-white p-6 sm:p-10 rounded-[2.5rem] border-4 border-primary shadow-2xl z-10 md:order-2">
+          <div className="relative bg-white p-6 sm:p-10 rounded-[2.5rem] border-4 border-primary shadow-2xl z-10 md:order-2 flex flex-col items-center">
             <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-white px-6 py-2 rounded-full text-sm font-black uppercase tracking-widest shadow-lg whitespace-nowrap">
               🌟O MAIS ESCOLHIDO
             </div>
 
-            <div className="text-center">
-              <h3 className="text-[26px] font-bold text-primary mt-[8px] mb-[12px]">Kit Completo</h3>
+            {completoMockup && (
+              <div className="mb-6 mt-6 flex justify-center w-full">
+                <Image 
+                  src={completoMockup.imageUrl}
+                  alt={completoMockup.description}
+                  width={320}
+                  height={220}
+                  className="max-h-[220px] w-auto object-contain"
+                  data-ai-hint={completoMockup.imageHint}
+                />
+              </div>
+            )}
+
+            <div className="text-center w-full">
+              <h3 className="text-[26px] font-bold text-primary mb-[12px]">Kit Completo</h3>
               <div className="flex flex-col items-center mb-[16px]">
                 <div className="mt-[4px] mb-[6px] text-center flex items-center justify-center gap-1">
                   <span className="text-[#4B5563] font-bold">De </span>
@@ -127,7 +157,7 @@ export function Pricing() {
               </div>
             </div>
 
-            <ul className="mb-10 pl-4 pr-6">
+            <ul className="mb-10 pl-4 pr-6 w-full">
               <li className="flex items-center font-medium text-[#1A1A2E] text-[15px] mb-[12px]">
                 <Check className="mr-2 h-[18px] w-[18px] text-[#2563EB] flex-shrink-0" />
                 <span className="leading-tight">+250 Dinâmicas Interativas</span>
