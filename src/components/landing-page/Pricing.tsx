@@ -65,7 +65,7 @@ export function Pricing() {
   };
 
   return (
-    <section id="precos" className="py-24 px-6 bg-white overflow-hidden">
+    <section id="precos" className="pt-12 pb-24 px-6 bg-white overflow-hidden">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary mb-4">
