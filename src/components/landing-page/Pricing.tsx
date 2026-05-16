@@ -86,7 +86,6 @@ export function Pricing() {
                   className="max-h-[180px] w-auto object-contain"
                   data-ai-hint={basicMockup.imageHint}
                 />
-                <p className="text-[12px] text-muted-foreground/70 mt-2 font-medium">Ideal para começar hoje</p>
               </div>
             )}
             
