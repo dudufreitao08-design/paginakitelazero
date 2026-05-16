@@ -89,6 +89,18 @@
       "description": "Selo de Garantia 7 Dias",
       "imageUrl": "https://i.imgur.com/BNMN6u8.png",
       "imageHint": "guarantee seal"
+    },
+    {
+      "id": "pricing-basico",
+      "description": "Mockup Kit Básico",
+      "imageUrl": "https://i.imgur.com/MbitFvB.png",
+      "imageHint": "product kit"
+    },
+    {
+      "id": "pricing-completo",
+      "description": "Mockup Kit Completo",
+      "imageUrl": "https://i.imgur.com/ajzmJE6.jpeg",
+      "imageHint": "full product"
     }
   ]
 }
