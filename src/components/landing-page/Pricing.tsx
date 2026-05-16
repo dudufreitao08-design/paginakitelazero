@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Check, ShieldCheck } from 'lucide-react';
+import { Check, ShieldCheck, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -214,6 +214,14 @@ export function Pricing() {
           <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
 
           <div className="relative bg-white w-full max-w-[380px] rounded-[16px] p-[28px_24px] shadow-2xl animate-in fade-in slide-in-from-bottom-8 duration-300">
+            {/* Botão de Fechar */}
+            <button 
+              onClick={() => setShowUpsell(false)}
+              className="absolute top-4 right-4 text-gray-300 hover:text-gray-500 transition-colors"
+            >
+              <X size={20} />
+            </button>
+
             <div className="flex flex-col items-center text-center">
               {/* Badge */}
               <div className="bg-[#2563EB] text-white text-[11px] font-bold py-[6px] px-[14px] rounded-[50px] uppercase tracking-wider">
@@ -227,14 +235,14 @@ export function Pricing() {
 
               {/* Subtítulo */}
               <p className="text-[14px] text-[#666666] mt-[8px] leading-[1.6]">
-                Antes de finalizar, que tal levar o Kit Completo com todos os bônus por apenas R$9,90 a mais?
+                Antes de finalizar, que tal levar o Kit Completo com todos os bônus por apenas R$19,90 no total?
               </p>
 
               {/* Linha de preço */}
               <div className="mt-[12px] flex flex-col items-center">
                 <div className="flex items-center gap-1 text-[15px]">
                   <span className="text-[#999999]">De </span>
-                  <span className="text-red-600 font-bold line-through">R$27,90</span>
+                  <span className="text-red-600 font-bold line-through">R$197,00</span>
                   <span className="text-[#999999]"> por apenas</span>
                 </div>
                 <div className="text-[48px] font-[900] text-black leading-none mt-1">
